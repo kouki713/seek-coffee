@@ -26,4 +26,19 @@ class HomeController extends Controller
     {
         return view('user.home');
     }
+
+    public function top()
+    {
+        return view('user.top');
+    }
+
+    public function about()
+    {
+        return view('user.about');
+    }
+
+    public function store_about()
+    {
+        return view('user.store_about');
+    }
 }

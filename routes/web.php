@@ -11,6 +11,13 @@
 |
 */
 
+Route::resource('home', 'User\HomeController', ['only' => 'index']);
+Route::get('/', 'User\HomeController@top')->name('home.top');
+Route::get('home/about', 'User\HomeController@about')->name('home.about');
+Route::get('home/store_about', 'User\HomeController@store_about')->name('home.store_about');
+
+Route::resource('item', 'User\ItemController')->only(['index', 'show']);
+
 // ユーザー
 Route::namespace('User')->prefix('user')->name('user.')->group(function () {
 
@@ -26,7 +33,19 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
 
         // TOPページ
         Route::resource('home', 'HomeController', ['only' => 'index']);
+        
+        Route::resource('order', 'OrderController')->only(['create', 'store']);
+        Route::get('order/confirm', 'OrderController@confirm')->name('order.confirm');
+        Route::get('order/finish', 'OrderController@finish')->name('order.finish');
+        Route::get('order/about', 'OrderController@about')->name('order.about');
 
+        Route::resource('delivery', 'DeliveryController')->only(['index', 'store', 'edit', 'update', 'destroy']);
+
+        Route::resource('contact', 'ContactController')->only(['create', 'store']);
+
+        Route::resource('cart', 'CartController')->only(['index', 'store', 'update', 'destroy']);
+
+        Route::resource('answer', 'AnswerController')->only(['index']);
     });
 });
 
@@ -43,9 +62,14 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     // ログイン認証後
     Route::middleware('auth:admin')->group(function () {
 
-        // TOPページ
-        Route::resource('home', 'HomeController', ['only' => 'index']);
-
+        // Route::get('item/create', 'ItemController@create')->name('item.create');
+        
+        Route::resource('home', 'HomeController')->only(['index']);
+        Route::resource('item', 'ItemController');
+        Route::resource('order', 'OrderController')->only(['index', 'show', 'update']);
+        Route::resource('receipt', 'ReceiptController')->only(['index', 'store']);
+        Route::resource('contact', 'ContactController')->only(['index', 'show', 'update']);
+        Route::resource('answer', 'AnswerController')->only(['index', 'store', 'edit', 'update', 'destroy']);
     });
 
 });

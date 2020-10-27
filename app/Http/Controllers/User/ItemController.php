@@ -7,5 +7,13 @@ use Illuminate\Http\Request;
 
 class ItemController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('user.item.index');
+    }
+
+    public function show()
+    {
+        return view('user.item.show');
+    }
 }
