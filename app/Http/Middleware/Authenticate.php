@@ -19,12 +19,18 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         // ルーティングに応じて未ログイン時のリダイレクト先を振り分ける
-        if (!$request->expectsJson()) {
-            if (Route::is('user.*')) {
-                return route($this->user_route);
-            } elseif (Route::is('admin.*')) {
-                return route($this->admin_route);
-            }
+        // if (!$request->expectsJson()) {
+        //     if (Route::is('user/*')) {
+        //         return route($this->user_route);
+        //     } elseif (Route::is('/admin/*')) {
+        //         return route($this->admin_route);
+        //     } else {
+        //         return route('/');
+        //     }
+        // }
+
+        if (! $request->expectsJson()) {
+            return route('user.login');
         }
     }
 }
