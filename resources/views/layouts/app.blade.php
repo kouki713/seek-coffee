@@ -17,14 +17,31 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/top/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/top/top.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/top/hamburger.css') }}" rel="stylesheet">
     
 </head>
 <body>
     <header>
         <div class="header-logo">
             <p>C</p>
+        </div>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">
+            <span class="burger">
+                <span class="bar"></span>
+            </span>
+        </label>
+        <label class="light-dark" for="hamburger"></label>
+        <div id="menu">
+            <a href="#top">HOME</a>
+            <a href="#menber">GREETING</a>
+            <a href="#menu1">MENU</a>
+            <a href="#store">ONLINE STORE</a>
+            <a href="#shop">SHOP</a>
+            <a href="{{ route('home.about') }}">ABOUT</a>
+            <a href="{{ route('admin.login') }}">AMINISTRATOR</a>
         </div>
     </header>
     <main>

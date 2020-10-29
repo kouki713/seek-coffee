@@ -1,0 +1,126 @@
+ /* ハンバーガーメニュー */
+ #hamburger {
+    /*透明にする*/
+    opacity: 0;
+    position: fixed;
+}
+/*バーガーメニューの移動*/
+label .burger {
+    position: fixed;
+    top: 1.3rem;
+    right: 1rem;
+    z-index: 3;
+    width: 2rem;
+    height: 2rem;
+}
+/*ラベルの中のバーガーに擬似クラスを作成する*/
+label .burger::before,
+label .burger::after,
+label .burger .bar {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 5px;
+    background: #FFF;
+    /*擬似要素につける*/
+    content: "";
+    transition: 0.5s;
+}
+/*ハンバーガー線の位置の設定*/
+label .burger::before {
+    top: 0;
+    /*回転させるときの起点を設定*/
+    transform-origin: top left;
+}
+label .burger::after {
+    bottom: 0;
+    transform-origin: bottom left;
+}
+label .burger .bar {
+    top: 45%;
+}
+
+#menu {
+    /*位置を固定*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    /*縦並び　nowraop回り込み対策*/
+    flex-flow: column nowrap;
+    /*いちをセンターに*/
+    justify-content: center;
+    /*起点となるところが最初になるように*/
+    align-items: flex-start;
+}
+#menu::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 300px;
+    background: #34558b;
+    content: "";
+    /*skewX(15deg)角度15度、エンジを傾ける　translate(-100%)左側に寄せておく*/
+    transform: skewX(0) translate(200%);
+    /*移動場所の起点*/
+    transform-origin: bottom left;
+    /*移動にかかる時間*/
+    transition: transform 0.3s;
+}
+/*menuを左にずらす*/
+#menu a {
+    margin: 13px 0;
+    margin-left: 10px;
+    padding: 0.2rem 3rem;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-decoration: none;
+    /*左側に移す　見えないところ*/
+    transform: translateX(200%);
+    /*menu文字の出てくるはやさ*/
+    transition: all 0.15s, transform 0.5s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*バーガーがクリックされたとき上の線と下の線の幅が130％になる*/
+#hamburger:checked + label .burger::before,
+#hamburger:checked + label .burger::after {
+    width: 130%;
+}
+/*上線を回転させる*/
+#hamburger:checked + label .burger::before {
+    transform: rotate(45deg);
+}
+/*下線を回転させる*/
+#hamburger:checked + label .burger::after {
+    transform: rotate(-45deg);
+}
+/*中線を消す(サイズが０になっている)*/
+#hamburger:checked + label .burger .bar {
+    transform: scale(0);
+}
+/*ハンバーガーがチェックされたらエンジ色を左から右に持ってくる*/
+#hamburger:checked ~ #menu::before {
+    transform: skewX(0) translateX(0);
+}
+#hamburger:checked ~ #menu a {
+    transform: translateX(0);
+}
+#hamburger:checked ~ .light-dark {
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+

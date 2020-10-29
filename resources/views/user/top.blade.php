@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="top">
+<div class="top" id="top">
     <div class="background"></div>
     <div class="top-content">
         <div class="title">
@@ -20,7 +20,26 @@
     </div>
 </div>
 
-<div class="menu">
+<div class="menber" id="menber">
+    <div class="menber-content">
+        <div class="title">
+            COFFEE STANDへようこそ。
+        </div>
+        <div class="body">
+            「仲間と共に多くの人に幸せを届けて、仲間と共に幸せになれたらいいな。」<br>
+            そんな想いを詰め込んだ場所を作りました。<br>
+            ささやかな一杯で幸せをお届けします。
+        </div>
+        <div class="profile">
+            <div class="profile-image"></div>
+            <div class="profile-text">
+                マイケル / 店長
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu" id="menu1">
     <div class="background"></div>
     <div class="menu-content">
         <div class="title">
@@ -106,18 +125,18 @@
 
 </div>
 
-<div class="store">
+<div class="store" id="store">
     <div class="background"></div>
     <div class="store-content">
         <h2 class="title">ONLINE STORE</h2>
         <p class="body">
             オンラインでもコーヒー豆をご注文いただけます。
         </p>
-        <a href="#" class="store-btn">
+        <a href="{{ route('home.index') }}" class="store-btn">
             ONLINE STORE
         </a>
         <div class="info">
-            <a href="" class="line">LINEに登録</a>
+            <a href="#" class="line">LINEに登録</a>
             <p class="info-text">
                 販売開始のお知らせや新商品の情報を配信します
             </p>
@@ -126,7 +145,7 @@
 
 </div>
 
-<div class="shop">  
+<div class="shop" id="shop">  
     <div class="background"></div>
     <div class="shop-content">
         <div class="title">
