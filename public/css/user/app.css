@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    font-family: Madera,sans-serif;
+}
+
+.store-header  {
+    display: table;
+    width: 100%;
+    height: 120px;
+    padding: 0 20px;
+    display: flex;
+}
+.store-header .store-logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px 20px 20px 10px;
+    background-color:  #34558b;
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+}
+.store-header .store-logo p {
+    height: 60px;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.store-header .store-nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 70%;
+    padding-left: 40px;
+}
+.store-header .store-nav a {
+    margin-right: 40px;
+    font-size: 13px;
+    color: #606060;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.store-header  .store-icon{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store-header  .store-icon i {
+    margin-left: 40px;
+    font-size: 18px;
+    color: #606060;
+    
+}

@@ -13,13 +13,38 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/user/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/user/top.css') }}" rel="stylesheet">
 </head>
 <body>
+    <header class="store-header">
+        <div class="store-logo">
+            <p>C</p>
+        </div>
+        <nav class="store-nav">
+            
+                    <a href="#">HOME</a>
+                
+                    <a href="#">ABOUT</a>
+                
+                    <a href="#">ITEM</a>
+                
+                    <a href="#">FAQ</a>
+                
+        </nav>
+        <div class="store-icon">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="far fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header> 
+
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
