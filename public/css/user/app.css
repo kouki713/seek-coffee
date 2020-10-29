@@ -46,8 +46,142 @@
     align-items: center;
 }
 .store-header  .store-icon i {
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 18px;
     color: #606060;
-    
 }
+
+main {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 330px;
+}
+
+footer {
+  width: 100%;
+  height: 330px;  
+  font-weight: 400;
+}
+footer .content {
+    width: 90%;
+    height: 185px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .content .footer-content {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #EEEEEE;
+}
+footer .content .border1 {
+    border-left: 0;
+}
+footer .content .border2 {
+    border-right: 0;
+}
+footer .content .footer-content .title {
+    color: #606060;
+    margin-top: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+footer .content .footer-content .body {
+    color: #34558b;
+    margin-top: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+footer .content .footer-content .body i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+footer .content .footer-content .body a {
+    color: #34558b;
+}
+footer .sub-footer {
+    width: 90%;
+    height: 145px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+footer .sub-footer .title {
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+footer .sub-footer .title a {
+    color: #34558b;
+    margin-right: 20px;
+    text-decoration: none;
+}
+footer .sub-footer .body {
+    margin-top: 20px;
+    color: #606060;
+    letter-spacing: 1px;
+}
+
+.drawer-hidden {
+    display: none;
+  }
+.drawer-content {
+    width: 30%;/* ここの割合を小さくすると閉じる部分の領域が広がる */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面外へ */
+    z-index: 100;/* 重なり順を一番上に */
+    background: #fff;
+    transition: .5s;
+}
+#drawer-check:checked ~ .drawer-content {
+    left: 70%;/* メニューを画面内へ */
+
+}
+.drawer-content .content {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    color: #4b4b4b; 
+    position: relative;
+}
+.drawer-content .content .title {
+}
+.drawer-content .content .title p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 18px;
+    font-size: 12px;
+}
+.drawer-content .content .title i {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    font-size: 20px;
+}
+.drawer-content .content .body {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+.drawer-close {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 100%;/* 閉じる要素を画面外へ */
+    z-index: 99;/* 重なり順をメニューより下に*/
+    transition: 0s;
+}
+#drawer-check:checked ~ .drawer-close {
+    left: 0;/* 閉じる要素を画面内へ */
+}
+
+

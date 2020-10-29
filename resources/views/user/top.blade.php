@@ -132,7 +132,7 @@
         <p class="body">
             オンラインでもコーヒー豆をご注文いただけます。
         </p>
-        <a href="{{ route('home.index') }}" class="store-btn">
+        <a href="{{ route('home.index') }}" target="_blank" class="store-btn">
             ONLINE STORE
         </a>
         <div class="info">

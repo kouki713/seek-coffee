@@ -1,0 +1,66 @@
+.main-image {
+    background-image: url("../../images/top.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+.background {
+    margin: 0;
+    background-color: #34558b;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+
+.main-text {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    color: #606060;
+    margin-bottom: 65px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.main-text .title {
+    margin-top: 65px;
+    font-size: 28px;
+}
+.main-text .body {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.top-items {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.top-items .item-contents {
+    width: 100%;
+    height: 100%;
+}
+.top-items .item-contents .content {
+    margin-bottom: 50px;
+    width: 32%;
+    height: 590px;
+    float: left;
+    color: #606060;
+}
+.top-items .item-contents .content:nth-child(2) {
+    margin: 0 2%;
+}
+.top-items .item-contents .content:nth-child(5) {
+    margin: 0 2%;
+}
+.top-items .item-contents .content .image  {
+    width: 100%;
+    height: 520px;
+    background-color:  #34558b;
+}
+.top-items .item-contents .content .title {
+    margin-top: 16px;
+    font-size: 18px;
+}
+.top-items .item-contents .content .price {
+    font-size: 14px;
+    margin-top: 10px;
+}
