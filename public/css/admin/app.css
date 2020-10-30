@@ -6,23 +6,24 @@
 .admin-header  {
     display: table;
     width: 100%;
-    height: 120px;
-    padding: 0 20px;
+    height: 70px;
+    padding: 0 15px;
     display: flex;
     background-color:  #34558b;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .admin-header .admin-logo {
-    width: 80px;
-    height: 80px;
-    margin: 20px 20px 20px 10px;
+    width: 50px;
+    height: 50px;
+    /* margin: 20px 20px 20px 10px; */
     color: #FFF;
     font-size: 40px;
     text-align: center;
-    border: solid 1px #FFF;
 }
 .admin-header .admin-logo p {
-    height: 60px;
-    padding-top: 15px;
+    padding-top: 10px;
     font-weight: 100;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -41,3 +42,56 @@
     text-decoration: none;
     letter-spacing: 1px;
 }
+
+main {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+/* サイドバー  */
+main .sidebar {
+    width: 15%;
+    height: 100vh;
+    background-color: #D9E5FF;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 10;
+}
+.sidebar-nav {
+    width: 100%;
+    
+    
+}
+.sidebar-nav .nav-content {
+    width: 80%;
+    padding: 15px 10%;
+    display: flex;
+    z-index: 100;
+    border-bottom: 1px solid silver ;
+}
+.sidebar-nav .nav-content i {
+    width: 20%;
+    padding-top: 4px;
+}
+.sidebar-nav .nav-content a {
+    z-index: 100;
+    font-size: 16px;
+    width: 60%;
+    text-decoration: none;
+    color: #34558b;
+}
+.sidebar-nav .nav-content span {
+    width: 15%;
+    margin-left: 5%;
+}
+
+main .content {
+    width: 100%;
+    padding-left: 15%;
+    height: 100vh;
+    background-color: #EEEEEE;
+    border-left:1px solid #111;
+}
+

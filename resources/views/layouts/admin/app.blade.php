@@ -13,6 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
@@ -25,15 +26,63 @@
             <p>C</p>
         </div>
         <nav class="admin-nav">          
-            <a href="{{ route('home.index') }}">HOME</a>               
-            <a href="{{ route('home.store_about') }}">ORDER</a>             
-            <a href="{{ route('item.index') }}">ITEM</a>      
-            <a href="{{ route('answer.index') }}">FAQ</a>
-            <a href="{{ route('contact.create') }}">CONTACT</a>
+            <a href="{{ route('admin.home.index') }}">HOME</a>               
+            <a href="{{ route('admin.order.index') }}">ORDER</a>             
+            <a href="{{ route('admin.item.index') }}">ITEM</a>      
+            <a href="{{ route('admin.answer.index') }}">FAQ</a>
+            <a href="{{ route('admin.contact.index') }}">CONTACT</a>
         </nav>
-    </header>    
+    </header>   
+     
     <main>
-        @yield('content')
+        <div class="sidebar">
+            <div class="sidebar-nav">
+                <div class="nav-content">
+                    <i class="fas fa-home"></i>
+                    <a href="#">ホーム</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="fas fa-tags"></i>
+                    <a href="#">商品一覧</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="far fa-plus-square"></i>
+                    <a href="#">商品登録</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#">注文履歴</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="far fa-address-card"></i>
+                    <a href="#">お問い合わせ</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="far fa-question-circle"></i>
+                    <a href="#">FAQ管理</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="fas fa-users"></i>
+                    <a href="#">会員管理</a>
+                    <span>></span>
+                </div>
+                <div class="nav-content">
+                    <i class="fas fa-highlighter"></i>
+                    <a href="#">商品入庫</a>
+                    <span>></span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            aaa
+            @yield('content')
+        </div>
     </main>
 </body>
 </html>

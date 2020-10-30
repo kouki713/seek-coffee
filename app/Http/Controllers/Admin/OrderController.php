@@ -9,7 +9,7 @@ class OrderController extends Controller
 {
     public function index()
     {
-        return view('admin.oeder.index');
+        return view('admin.order.index');
     }
 
     public function show()
