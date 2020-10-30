@@ -29,3 +29,102 @@
     margin-top: 14px;
     font-size: 14px;
 }
+
+/* 商品詳細ページ */
+.item-show {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+}
+.item-show .item-image {
+    width: 55%;
+}
+.item-show .item-image .image {
+    width: 100%;
+    height: 470px;
+    background-color: #34558b;
+}
+.item-show .item-content {
+    width: 40%;
+    margin-left: 5%;
+    color: #4b4b4b;
+    
+}
+.item-show .item-content .header {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.item-show .item-content .header .title{
+    font-weight: 100;
+    margin: 8px 0;
+    font-size: 32px;
+}
+.item-show .item-content .header .price {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.item-show .item-content .header .price span {
+    font-size: 13px;
+    text-decoration: none;
+}
+.item-show .item-content .header a {
+    color: #34558b;
+    font-size: 14px;
+
+}
+.item-show .item-content .show-form {
+    width: 100%;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 0;
+}
+.item-show .item-content button {
+    padding: 15px 24px;
+    width: 100%;
+    font-size: 13px;
+    background-color: #34558b;
+    border: 2px solid transparent;
+    color: #fff;
+    position: relative;
+}
+.item-show .item-content button::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-weight: 900;
+    font-size: 20px;
+}
+.item-show .item-content .num-form {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+.item-show .item-content .num-form p {
+    font-size: 13px;
+}
+.item-show .item-content .num-form select {
+    padding: 5px;
+    font-size: 13px;
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 5px;
+    border-radius: 0;
+    background-color: #E8F0FE;
+}
+.item-show .item-content .show-body {
+    width: 100%;
+    margin-top: 30px; 
+}
+.item-show .item-content .show-body .text {
+    font-size: 15px;
+}
+.item-show .item-content .show-body .text p {
+    font-weight: 800;
+}
+
