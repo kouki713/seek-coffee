@@ -21,8 +21,9 @@
 }
 .store-header .store-logo p {
     height: 60px;
-    padding-top: 10px;
+    padding-top: 15px;
     font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .store-header .store-nav {
@@ -53,8 +54,9 @@
 
 main {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     padding-bottom: 330px;
+    margin-bottom: 100px;
 }
 
 footer {
@@ -183,5 +185,96 @@ footer .sub-footer .body {
 #drawer-check:checked ~ .drawer-close {
     left: 0;/* 閉じる要素を画面内へ */
 }
+#icon-check:checked ~ .close-icon {
+    left: 0;/* 閉じる要素を画面内へ */
+}
+
+/* コンテンツごとのヘッダー */
+.content-header {
+    width: 90%;
+    margin: 0 auto;
+    height: 120px;
+    border-bottom: solid 1px #EEEEEE;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+.content-header .header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-header .header-nav span {
+    font-size: 16px;
+    color: #606060;
+    letter-spacing: 1px;
+    margin: 0 5px;
+}
+.content-header .header-nav p {
+    font-size: 16px;
+    color: #606060;
+    letter-spacing: 1px;
+}
+.content-header .header-nav a {
+    color: #34558b;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.content-header .title {
+    margin-top: 20px;
+    color: #4B4B4B;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.login-form {
+    height: 100%;
+    width: 30%;
+    margin: 50px auto;
+    color: #4B4B4B;
+    font-size: 14px;
+}
+.login-form form {
+    padding-bottom: 50px;
+    width: 100%;
+    border-bottom: solid 1px #EEEEEE;
+}
+.login-form .form-control {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 0;
+    border: solid 1px #EEEEEE;
+    background-color: #E8F0FE;
+}
+.login-form .form-btn {
+    margin-top: 30px;
+}
+.login-form .form-btn button {
+    padding: 14px 24px;
+    background-color: #34558b;
+    color: #FFF;
+    border-radius: 0;
+    border: 0;
+}
+.login-form .form-btn input {
+    border-radius: 0;
+    margin-left: 50px;
+}
+.login-form-up {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #4B4B4B;
+}
+.login-form-up a {
+    color: #34558b;
+    text-decoration: none;
+}
+
 
 

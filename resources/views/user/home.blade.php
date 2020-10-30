@@ -10,7 +10,7 @@
     <div class="body">
     We make every cup of coffee with love and 
     make your heart warm. <br>
-    R coffee stand is the place where you can 
+    seek coffee is the place where you can 
     share a coffee time with your loved ones.
     </div>
 </div>
@@ -38,7 +38,7 @@
         </div>
         <div class="content">
             <div class="image"></div>
-            <div class="title">STAND BLEND(深煎り)</div>
+            <div class="title">SEED BLEND(深煎り)</div>
             <div class="price">¥2,000</div>
         </div>
         <div class="content">

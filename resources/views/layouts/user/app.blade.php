@@ -20,26 +20,23 @@
     <!-- Styles -->
     <link href="{{ asset('css/user/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/user/top.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/user/item.css') }}" rel="stylesheet">
 </head>
 <body>
     <header class="store-header">
         <div class="store-logo">
             <p>C</p>
         </div>
-        <nav class="store-nav">
-            
-                    <a href="#">HOME</a>
-                
-                    <a href="#">ABOUT</a>
-                
-                    <a href="#">ITEM</a>
-                
-                    <a href="#">FAQ</a>
-                
+        <nav class="store-nav">          
+            <a href="{{ route('home.index') }}">HOME</a>               
+            <a href="{{ route('home.store_about') }}">ABOUT</a>             
+            <a href="{{ route('item.index') }}">ITEM</a>      
+            <a href="{{ route('answer.index') }}">FAQ</a>
+            <a href="{{ route('contact.create') }}">CONTACT</a>
         </nav>
         <div class="store-icon">
             <a href="#"><i class="fas fa-search"></i></a>
-            <a href="#"><i class="far fa-user"></i></a>
+            <a href="{{ route('user.user.index') }}"><i class="far fa-user"></i></a>
             <input type="checkbox" id="drawer-check" class="drawer-hidden" >
             <label for="drawer-check" class="drawer-open">
                 <i class="fas fa-shopping-cart"></i>
@@ -47,20 +44,22 @@
             <label for="drawer-check" class="drawer-close"></label>
             <nav class="drawer-content">
                 <div class="content">
-                <div class="title">
-                    <p>ショッピングカート</p>
-                    <i class="fas fa-times"></i>
+                    <div class="title">
+                        <p>ショッピングカート</p>
+                        <input type="checkbox" id="icon-check" class="drawer-hidden" >
+                        <label for="drawer-check" class="close-icon">
+                            <i class="fas fa-times"></i>
+                        </label>
+                    </div>
+                    <div class="body">
+                        <p>カートは現在空です。</p>
+                    </div>
                 </div>
-                <div class="body">
-                    <p>カートは現在空です。</p>
-                </div>
-</div>
-            </div>
+            </nav>
         </div>
-        
     </header> 
 
-    <main class="py-4">
+    <main>
         @yield('content')
     </main>
     <footer>
@@ -70,7 +69,7 @@
                     OFFICIAL WEB SITE
                 </div>
                 <div class="body">
-                    <a href="{{ route('home.top') }}">COFFEE STAND</a>
+                    <a href="{{ route('home.top') }}">SEEK COFFEE</a>
                     
                 </div>
             </div>
@@ -94,7 +93,7 @@
                 <a href="#">特定商取引法に基づく表記</a>
             </div>
             <div class="body">
-                ©2020, COFFEE STAND
+                ©2020, SEEK COFFEE
             </div>
         </div>
     </footer>

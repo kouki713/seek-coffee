@@ -5,7 +5,7 @@
     <div class="background"></div>
     <div class="top-content">
         <div class="title">
-            COFFEE STAND
+            SEEK COFFEE
         </div>
         <div class="body">
             ささやかな一杯で、幸せな一生に
@@ -23,7 +23,7 @@
 <div class="menber" id="menber">
     <div class="menber-content">
         <div class="title">
-            COFFEE STANDへようこそ。
+            SEEK COFFEEへようこそ。
         </div>
         <div class="body">
             「仲間と共に多くの人に幸せを届けて、仲間と共に幸せになれたらいいな。」<br>
