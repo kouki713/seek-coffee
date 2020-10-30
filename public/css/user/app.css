@@ -194,7 +194,6 @@ footer .sub-footer .body {
     width: 90%;
     margin: 0 auto;
     height: 120px;
-    border-bottom: solid 1px #EEEEEE;
     text-align: center;
     padding-top: 40px;
     
@@ -241,7 +240,6 @@ footer .sub-footer .body {
 .login-form form {
     padding-bottom: 50px;
     width: 100%;
-    border-bottom: solid 1px #EEEEEE;
 }
 .login-form .form-control {
     width: 100%;
@@ -267,9 +265,10 @@ footer .sub-footer .body {
     margin-left: 50px;
 }
 .login-form-up {
-    margin-top: 50px;
+    padding-top: 50px;
     font-size: 14px;
     color: #4B4B4B;
+    border-top: solid 1px #EEEEEE;
 }
 .login-form-up a {
     color: #34558b;
