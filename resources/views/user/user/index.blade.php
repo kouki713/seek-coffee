@@ -1,7 +1,15 @@
 @extends('layouts.user.app')
 @section('content')
-<div class="content-header">
+<div class="content-header user-ind">
     <h1 class="title">ACCOUNT</h1>
+    <a href="{{ route('user.logout') }}"
+        onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();">
+        <p>ログアウト<span>→</span></p>
+    </a>
+    <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>  
 </div>
 <div class="user-index">
     <div class="info">

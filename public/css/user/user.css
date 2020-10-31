@@ -1,4 +1,12 @@
 /* ユーザアカウントページ */
+.user-ind {
+    position: relative;
+}
+.user-ind a {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
 .user-index {
     width: 90%;
     border-top: solid 1px #EEEEEE;
