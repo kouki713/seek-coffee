@@ -19,7 +19,7 @@ class deliveryController extends Controller
 
     public function edit()
     {
-        return view('user.delivery');
+        return view('user.delivery.edit');
     }
 
     public function update()
