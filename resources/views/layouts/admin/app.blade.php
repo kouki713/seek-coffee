@@ -33,6 +33,20 @@
             <a href="{{ route('admin.answer.index') }}">FAQ</a>
             <a href="{{ route('admin.contact.index') }}">CONTACT</a>
         </nav>
+        <div class="logout-nav">
+            @guest
+            @else
+                <a href="{{ route('admin.logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    <p>LOGOUT<span>→</span></p>
+                </a>
+                <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>  
+            @endguest 
+        </div>
+       
     </header>   
      
     <main>
