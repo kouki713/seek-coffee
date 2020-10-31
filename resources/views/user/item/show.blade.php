@@ -3,15 +3,17 @@
 
 <div class="item-show">
     <div class="item-image">
-        <div class="image"></div>
+        <div class="image">
+            <img src="../../uploads/{{ $item->item_image }}">
+        </div>
     </div>
     <div class="item-content">
         <div class="header">
             <h1 class="title">
-                SEED BLEND(深煎り)
+                {{ $item -> item_name }}
             </h1>
             <p class="price">
-                ¥2,000
+                ¥{{ number_format($item->price) }}
                 <span>税込</span>
             </p>
             <a href="#">送料はこちら</a>
@@ -34,19 +36,7 @@
         <div class="show-body">
             <div class="text">
                 <p>※お一人様５個までとなります。</p>
-                <br>
-                Rブレンドよりコクと深みが強いのが特徴のSEEDブレンド。<br>
-                <br>
-                ミルクと合わせることにより甘さが際立ち、チョコレートのような風味へ変化します。<br>
-                ダークチョコレートやナッツの風味を感じるグアテマラ ワイカン、ブラジル シティオ・ダ・トーレの焙煎度合いを深煎りに調整しブレンドしました。<br>
-                <br>
-                飲み頃は到着後1週間から1ヶ月が目安になります。<br>
-                <br>
-                重さ：各220g（袋含）<br>
-                賞味期限：焙煎日から2ヶ月ほど<br>
-                <br>
-                ※写真はイメージです。
-                </div>
+                {!! nl2br(e($item->item_body)) !!}
         </div>
     </div>
 </div>

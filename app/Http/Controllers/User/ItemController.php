@@ -14,10 +14,10 @@ class ItemController extends Controller
         return view('user.item.index', compact('items'));
     }
 
-    public function show($id)
+    public function show($item)
     {
-        $item = Item::find($id);
+        $item = Item::find($item);
 
-        return view('user.item.show', conpact('item'));
+        return view('user.item.show', compact('item'));
     }
 }

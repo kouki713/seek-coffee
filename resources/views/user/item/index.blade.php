@@ -14,7 +14,7 @@
     <div class="item-contents clearfix">
         @foreach ($items as $item)
         <div class="content">
-            <a href="#">
+            <a href="{{ route('item.show', ['item' => $item]) }}">
                 <div class="image">
                     <img src="../../uploads/{{ $item->item_image }}">
                 </div>
