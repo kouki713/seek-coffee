@@ -11,15 +11,15 @@
         <p>〒 {{ $delivery->postal_code }}</p>
         <p>{{ $delivery->address }}</p>
         <p>TEL {{ $delivery->phone_number }}</p>
+        <div class="deli-info">
+            <a href="{{ route('user.delivery.edit', ['delivery' => $delivery]) }}">編集</a>
+            <form method="POST" action="{{route('user.delivery.destroy', ['delivery' => $delivery ]) }}">
+                @csrf
+                @method('delete')
+                <input type="submit" value="削除">
+            </form>
+        </div>
     @endforeach
-    <div class="add-name">山田太郎</div>
-    <p>〒 2130001</p>
-    <p>神奈川県, 川崎市高津区溝口3丁目21−11, スミタス溝ノ口　203</p>
-    <p>TEL 08012345678</p>
-    <div class="deli-info">
-        <a href="#">編集</a>
-        <a href="#">削除</a>
-    </div>
     <div class="new-btn">
         <a href="#">新しい住所を追加</a>
     </div>
