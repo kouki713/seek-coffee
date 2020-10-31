@@ -19,7 +19,7 @@
         <p class="email">
             {{ $user->email }}
         </p>
-        <a href="{{ route('user.delivery.index') }}">登録住所（０）</a>
+        <a href="{{ route('user.delivery.index') }}">登録住所（{{ $user->deliverys->count() }}）</a>
     </div>
     <div class="order">
         <p class="title">
