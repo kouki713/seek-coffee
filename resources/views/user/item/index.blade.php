@@ -12,37 +12,19 @@
 
 <div class="items">
     <div class="item-contents clearfix">
+        @foreach ($items as $item)
         <div class="content">
-            <div class="image"></div>
-            <div class="title">BLEND(浅煎り)</div>
-            <div class="price">¥2,000</div>
+            <a href="#">
+                <div class="image">
+                    <img src="../../uploads/{{ $item->item_image }}">
+                </div>
+            </a>
+            <div class="title">{{ $item->item_name }}</div>
+            <div class="price">¥{{ number_format($item->price) }}</div>
         </div>
-        <div class="content">
-            <div class="image"></div>
-            <div class="title">SEED BLEND(深煎り)</div>
-            <div class="price">¥2,000</div>
-        </div>
-        <div class="content">
-            <div class="image"></div>
-            <div class="title">マグボトル（青）</div>
-            <div class="price">¥2,000</div>
-        </div>
-        <div class="content">
-            <div class="image"></div>
-            <div class="title">マグボトル</div>
-            <div class="price">¥2,000</div>
-        </div>
-        <div class="content">
-            <div class="image"></div>
-            <div class="title">パウンドケーキ６個セット</div>
-            <div class="price">¥1,800</div>
-        </div>
-        <div class="content">
-            <div class="image"></div>
-            <div class="title">コールドブリューバッグ</div>
-            <div class="price">¥2,000</div>
-        </div>
+        @endforeach
     </div>
 </div>
+
 
 @endsection

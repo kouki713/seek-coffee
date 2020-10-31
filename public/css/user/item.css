@@ -1,3 +1,4 @@
+/* 商品一覧ページ */
 .items {
     width: 90%;
     margin: 50px auto;
@@ -21,6 +22,15 @@
     width: 100%;
     height: 380px;
 }
+.items .item-contents .content .image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.items .item-contents .content .image img:hover {
+    opacity: 0.4;
+}
+
 .items .item-contents .content .title {
     margin-top: 20px;
     font-size: 18px;
