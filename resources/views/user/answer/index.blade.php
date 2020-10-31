@@ -9,5 +9,18 @@
     </div>
     <h1 class="title">FAQ</h1>
 </div>
+<div class="answer">
+    @foreach ($answers as $answer)
+        <div class="content">
+            <div class="title">
+                <h2>{{ $answer->title }}</h2>
+                <a href="#">⬇︎</a>
+            </div>
+            <div class="body">
+                <p>{!! nl2br(e($answer->body)) !!}</p>
+            </div>
+        </div>
+    @endforeach
+</div>
 
 @endsection
