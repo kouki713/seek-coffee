@@ -81,6 +81,7 @@ main .sidebar {
     width: 60%;
     text-decoration: none;
     color: #34558b;
+    font-weight: 600;
 }
 .sidebar-nav .nav-content span {
     width: 15%;
@@ -90,7 +91,8 @@ main .sidebar {
 main .content {
     width: 100%;
     padding-left: 15%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background-color: #EEEEEE;
     border-left:1px solid #111;
 }

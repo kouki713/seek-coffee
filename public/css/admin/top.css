@@ -1,0 +1,178 @@
+.home-header {
+    background-color: #FFF;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid 1px silver;
+}
+.home-header h1 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    padding-left: 25px;
+    color: #34558b;
+}
+.home-main {
+    padding: 25px;
+}
+.home-main .header {
+    font-size: 16px;
+    border-bottom: solid 1px silver;
+    padding: 20px;
+    font-weight: 800;
+}
+.home-main .body1 {
+    display: flex;
+}
+.home-main .body1 .order {
+    background-color: #FFF;
+    border: solid 1px silver;
+    width: 49%;
+    height: 350px;
+}
+.order .body {
+    padding: 20px;
+    font-size: 18px;
+    border-bottom: solid 1px #EEE;
+    display: flex;
+}
+.order .body .title {
+    width: 80%;
+}
+.order .body .num {
+    font-weight: 800;
+    width: 10%;
+}
+.order .body a {
+    width: 10%;
+    color: #34558b;
+    text-decoration: none;
+}
+.home-main .body1 .contact {
+    background-color: #FFF;
+    border: solid 1px silver;
+    width: 49%;
+    height: 350px;
+    margin-left: 2%;
+}
+.contact .body {
+    padding: 20px;
+    font-size: 18px;
+    border-bottom: solid 1px #EEE;
+    display: flex;
+}
+.contact .body .title {
+    width: 80%;
+}
+.contact .body .num {
+    font-weight: 800;
+    width: 10%;
+}
+.contact .body a {
+    width: 10%;
+    color: #34558b;
+    text-decoration: none;
+}
+.home-main .body2 {
+    display: flex;
+    margin-top: 25px;
+}
+.home-main .body2 .sales {
+    background-color: #FFF;
+    border: solid 1px silver;
+    width: 69%;
+    height: 250px;
+}
+.sales .body {
+
+}
+.sales .body .main {
+    padding: 15px;
+    text-align: center;
+    border-bottom: solid 1px #EEE;
+}
+.sales .body .main .num {
+    text-align: center;
+    width: 100%;
+    
+}
+.sales .body .main .num p {
+    font-size: 25px;
+}
+.sales .body .main .num p span {
+    margin: 0 5px;
+}
+.sales .body .main p {
+    font-size: 12px;
+}
+.sales .body .sub {
+    display: flex;
+    padding: 15px;
+    border-bottom: solid 1px #EEE;
+}
+.sales .body .sub .contents {
+    width: 50%;
+    text-align: center;
+    
+}
+.sales .body .sub .contents .num {
+    
+}
+.sales .body .sub .contents .num p {
+    font-size: 20px;
+    
+}
+.sales .body .sub .contents .num span {
+    margin: 0 5px;
+}
+.sales .body .sub .contents p {
+    font-size: 12px;
+    
+}
+
+.home-main .body2 .receipt {
+    background-color: #FFF;
+    border: solid 1px silver;
+    width: 29%;
+    height: 250px;
+    margin-left: 2%;
+}
+.receipt .dody {
+
+}
+.receipt .body .body-content {
+    padding: 15px;
+    display: flex;
+    border-bottom: solid 1px #EEE;
+}
+.receipt .body .body-content i {
+    font-size: 40px;
+    color: silver;
+    width: 20%;
+    
+}
+.receipt .body .body-content .fa-tags {
+    position: relative;
+}
+.receipt .body .body-content .fa-tags .fa-slash {
+    transform: rotateZ(100deg);
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+.receipt .body .body-content .main {
+    width: 70%;
+
+}
+.receipt .body .body-content .main .num {
+    font-size: 18px;
+}
+.receipt .body .body-content .main .title {
+    font-size: 12px;
+}
+.receipt .body .body-content a {
+    width: 10%;
+    text-decoration: none;
+    color: #34558b;
+    padding-top: 10px;
+}

@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/admin/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/top.css') }}" rel="stylesheet">
 </head>
 <body>
     <header class="admin-header">
@@ -80,7 +81,6 @@
             </div>
         </div>
         <div class="content">
-            aaa
             @yield('content')
         </div>
     </main>
