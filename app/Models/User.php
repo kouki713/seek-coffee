@@ -7,7 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
-{
+{   
+    public function deliverys(){
+        return $this->hasMany('App\Models\Delivery');
+    }
+
     use Notifiable;
 
     /**
