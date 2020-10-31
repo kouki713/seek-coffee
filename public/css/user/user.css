@@ -6,6 +6,8 @@
     position: absolute;
     top: 70px;
     right: 0;
+    color: #34558b;
+    text-decoration: none;
 }
 .user-index {
     width: 90%;
