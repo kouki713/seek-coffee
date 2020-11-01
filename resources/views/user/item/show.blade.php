@@ -18,8 +18,9 @@
             </p>
             <a href="#">送料はこちら</a>
         </div>
-        <form class="show-form">
-            <button>カートへ入れて、注文へ</button>
+        <form method="POST" action="{{route('user.cart.store')}}" class="show-form">
+            @csrf
+            <input type="submit" class="button" value="カートへ入れて、注文へ">
             <div class="num-form">
                 <p>数量選択</p>
                 <select name="num">
@@ -31,6 +32,7 @@
                     <option value="5">5</option>
                 </select>
                 <p>個</p>
+                <input type="hidden" name="item_id" value="{{ $item->id }}">
             </div>
         </form>
         <div class="show-body">

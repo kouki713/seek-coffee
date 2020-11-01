@@ -11,6 +11,9 @@ class User extends Authenticatable
     public function deliverys(){
         return $this->hasMany('App\Models\Delivery');
     }
+    public function carts(){
+        return $this->hasMany('App\Models\Cart');
+    }
 
     use Notifiable;
 

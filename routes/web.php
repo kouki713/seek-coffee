@@ -17,7 +17,7 @@ Route::get('home/about', 'User\HomeController@about')->name('home.about');
 Route::get('home/store_about', 'User\HomeController@store_about')->name('home.store_about');
 Route::resource('contact', 'User\ContactController')->only(['create', 'store']);
 
-Route::resource('cart', 'User\CartController')->only(['store', 'update', 'destroy']);
+// Route::resource('cart', 'User\CartController')->only(['store', 'update', 'destroy']);
 
 Route::resource('answer', 'User\AnswerController')->only(['index']);
 
@@ -46,7 +46,7 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
 
         Route::resource('delivery', 'DeliveryController')->only(['index', 'store', 'edit', 'update', 'destroy']);
 
-        Route::resource('cart', 'CartController')->only(['index']);
+        Route::resource('cart', 'CartController')->only(['index', 'store', 'update', 'destroy']);
         Route::resource('user', 'UserController')->only(['index']);
     });
 });
