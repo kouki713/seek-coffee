@@ -24,6 +24,7 @@
     <link href="{{ asset('css/user/user.css') }}" rel="stylesheet">
     <link href="{{ asset('css/user/delivery.css') }}" rel="stylesheet">
     <link href="{{ asset('css/user/answer.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/user/contact.css') }}" rel="stylesheet">
 </head>
 <body>
     <header class="store-header">

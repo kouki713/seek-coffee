@@ -1,0 +1,35 @@
+.contact {
+    width: 60%;
+    border-top: solid 1px #EEEEEE;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #4b4b4b;
+}
+.contact h3 {
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.contact p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.contact .input {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 14px;
+    border-radius: 0;
+    border: solid 1px #EEEEEE;
+    background-color: #E8F0FE;
+}
+.contact .contact-btn {
+    width: 60px;
+    padding: 14px 20px;
+    background-color: #34558b;
+    border-radius: 0;
+    border: 0;
+    margin-top: 15px;
+}
+.contact .contact-btn input {
+    color: #FFFFFF;
+}
