@@ -17,7 +17,9 @@
             {{ $user->name }}
         </p>
         <p class="email">
-            {{ $user->email }}
+            <a href="mailto:{{ $user->email }}">
+                {{ $user->email }}
+            </a>    
         </p>
         <a href="{{ route('user.delivery.index') }}">登録住所（{{ $user->deliverys->count() }}）</a>
     </div>
