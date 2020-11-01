@@ -56,6 +56,11 @@
     height: 520px;
     background-color:  #34558b;
 }
+.top-items .item-contents .content .image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
 .top-items .item-contents .content .title {
     margin-top: 16px;
     font-size: 18px;
