@@ -54,32 +54,32 @@
             <div class="sidebar-nav">
                 <div class="nav-content">
                     <i class="fas fa-home"></i>
-                    <a href="admin.home.index">ホーム</a>
+                    <a href="{{ route('admin.home.index') }}">ホーム</a>
                     <span>></span>
                 </div>
                 <div class="nav-content">
                     <i class="fas fa-tags"></i>
-                    <a href="admin.item.index">商品一覧</a>
+                    <a href="{{ route('admin.item.index') }}">商品一覧</a>
                     <span>></span>
                 </div>
                 <div class="nav-content">
                     <i class="far fa-plus-square"></i>
-                    <a href="admin.item.create">商品登録</a>
+                    <a href="{{ route('admin.item.create') }}">商品登録</a>
                     <span>></span>
                 </div>
                 <div class="nav-content">
                     <i class="fas fa-shopping-cart"></i>
-                    <a href="admin.order.index">注文履歴</a>
+                    <a href="{{ route('admin.order.index') }}">注文履歴</a>
                     <span>></span>
                 </div>
                 <div class="nav-content">
                     <i class="far fa-address-card"></i>
-                    <a href="admin.contact.index">お問い合わせ</a>
+                    <a href="{{ route('admin.contact.index') }}">お問い合わせ</a>
                     <span>></span>
                 </div>
                 <div class="nav-content">
                     <i class="far fa-question-circle"></i>
-                    <a href="admin.answer.index">FAQ管理</a>
+                    <a href="{{ route('admin.answer.index') }}">FAQ管理</a>
                     <span>></span>
                 </div>
                 <div class="nav-content">
@@ -89,7 +89,7 @@
                 </div>
                 <div class="nav-content">
                     <i class="fas fa-highlighter"></i>
-                    <a href="admin.receipt.index">商品入庫</a>
+                    <a href="{{ route('admin.receipt.index') }}">商品入庫</a>
                     <span>></span>
                 </div>
             </div>
