@@ -25,6 +25,6 @@ class ContactController extends Controller
         
         $contact->save();
     
-        return back();
+        return redirect()->route('home.index');
     }
 }

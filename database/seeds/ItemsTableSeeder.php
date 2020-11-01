@@ -17,6 +17,7 @@ class ItemsTableSeeder extends Seeder
             'item_image' => 'item.jpg',
             'price' => 2000,
             'item_status' => 1,
+            'num' => 100,
             'item_body' => 'ブレンドよりコクと深みが強いのが特徴のSEEDブレンド。'."\n".
 
                 'ミルクと合わせることにより甘さが際立ち、チョコレートのような風味へ変化します。'."\n".
@@ -35,6 +36,7 @@ class ItemsTableSeeder extends Seeder
             'item_image' => 'item.jpg',
             'price' => 2000,
             'item_status' => 1,
+            'num' => 30,
             'item_body' => 'コーヒーが苦手な人でも楽しんでいただきたい。そんなテーマをもとにSEEDブレンドを作りました。'."\n".
 
                 '前回のSEED BLENDは、夏らしい爽やかな柑橘や紅茶を思わせるコーヒーでしたが
@@ -56,6 +58,7 @@ class ItemsTableSeeder extends Seeder
             'item_image' => 'item2.jpg',
             'price' => 2000,
             'item_status' => 1,
+            'num' => 50,
             'item_body' => 'マットな白地にワンポイントのロゴを配置したシンプルなデザインのSEED COFFEEオリジナルマグボトルです。'."\n".
                 '真空二重構造の保冷温ボトルで、持ち運びに便利な200mlサイズです。'."\n".
                 '店舗にRマグボトルをお持ちいただければ、ドリンクを入れることも可能です。'."\n".
@@ -70,6 +73,7 @@ class ItemsTableSeeder extends Seeder
             'item_image' => 'item2.jpg',
             'price' => 2000,
             'item_status' => 1,
+            'num' => 40,
             'item_body' => 'SEED COFFEEのブランドカラーにワンポイントのロゴを配置したシンプルなデザインのオリジナルマグボトルです。'."\n".
                 "\n".
                 '真空二重構造の保冷温ボトルで、持ち運びに便利な200mlサイズです。'."\n".
@@ -85,6 +89,7 @@ class ItemsTableSeeder extends Seeder
             'item_image' => 'cake.jpg',
             'price' => 1800,
             'item_status' => 1,
+            'num' => 50,
             'item_body' => '素材を一つ一つ厳選し、丁寧にしっとりと焼き上げたスタイリッシュなプチパウンドケーキです。'."\n".
                 "\n".
                 '商品と原材料：'."\n".
@@ -132,6 +137,7 @@ class ItemsTableSeeder extends Seeder
             'item_image' => 'item.jpg',
             'price' => 2000,
             'item_status' => 1,
+            'num' => 60,
             'item_body' => '時間をかけてゆっくりと抽出することで、まろやかな口当たりに。'."\n".
                 'SEED COFFEEのCOLD BREWをご自宅で入れてみませんか。'."\n".
                 "\n".
