@@ -9,4 +9,7 @@ class Item extends Model
     public function carts(){
         return $this->hasMany('App\Models\Cart');
     }
+    public function receipts(){
+        return $this->hasMany('App\Models\Receipt');
+    }
 }

@@ -185,7 +185,7 @@ footer .sub-footer .body {
 .drawer-content .content .body .login a {
     text-decoration: none;
     color: #FFF;
-    width: 100%;
+    width: 100% ;
 }
 .drawer-content .content .body .cart-content {
     display: flex;

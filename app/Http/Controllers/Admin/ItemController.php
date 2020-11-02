@@ -21,9 +21,11 @@ class ItemController extends Controller
         return view('admin.item.index', compact('items'));
     }
 
-    public function show()
+    public function show($item)
     {
-        return view('admin.item.show');
+        $item = Item::find($item);
+
+        return view('admin.item.show', compact('item'));
     }
 
     public function create()
@@ -52,13 +54,29 @@ class ItemController extends Controller
         return redirect('admin/item');
     }
 
-    public function edit()
+    public function edit($item)
     {
-        return view('admin.item.edit');
+        $item = Item::find($item);
+
+        return view('admin.item.edit', compact('item'));
     }
 
-    public function update()
+    public function update(Request $request, $item)
     {
+        $file = $request->item_image;
+        $fileName = time() . $file->getClientOriginalName();
+        $target_path = public_path('uploads/');
+        $file->move($target_path, $fileName);
+
+        $item->item_name = $request->input('item_name');
+        $item->item_body = $request->input('item_body');
+        $item->price = $request->input('price');
+        $item->item_status = 1;
+        $item->item_image = $fileName;
+
         
+        $item->save();
+
+        return redirect()->route('admin.item.index');
     }
 }

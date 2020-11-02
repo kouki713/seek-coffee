@@ -1,0 +1,122 @@
+.item-index {
+    padding: 20px;
+}
+.item-index table {
+    width: 100%;
+}
+.item-index th {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: solid 1px silver;
+    padding: 0;
+}
+.item-index th p {
+    padding-bottom: 12px;
+}
+.item-index td {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 15px 0;
+}
+.item-index .title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.item-index td a {
+    text-decoration: none;
+    color: #34558b;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.item-show {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+}
+.item-show .item-image {
+    width: 55%;
+}
+.item-show .item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-show .item-image .image {
+    width: 100%;
+}
+.item-show .item-content {
+    width: 40%;
+    margin-left: 5%;
+    color: #4b4b4b;
+    
+}
+.item-show .item-content .header {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.item-show .item-content .header .title{
+    font-weight: 100;
+    margin: 8px 0;
+    font-size: 32px;
+}
+.item-show .item-content .header .price {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.item-show .item-content .header .price span {
+    font-size: 13px;
+    text-decoration: none;
+}
+.item-show .item-content .header a {
+    color: #34558b;
+    font-size: 14px;
+
+}
+.item-show .item-content .show-form {
+    width: 100%;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 0;
+}
+.item-show .item-content .button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #34558b;
+    padding: 15px 0;
+}
+.item-show .item-content a {
+    width: 100%;
+    font-size: 13px;
+    border: 2px solid transparent;
+    color: #fff;
+    text-decoration: none;
+}
+.item-show .item-content .num-form {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+.item-show .item-content .num-form p {
+    font-size: 13px;
+}
+
+.item-show .item-content .show-body {
+    width: 100%;
+    margin-top: 30px; 
+}
+.item-show .item-content .show-body .text {
+    font-size: 15px;
+}
+.item-show .item-content .show-body .text p {
+    font-weight: 800;
+}
