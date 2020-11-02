@@ -28,12 +28,8 @@
         <div class="admin-logo">
             <p>C</p>
         </div>
-        <nav class="admin-nav">          
-            <a href="{{ route('admin.home.index') }}">HOME</a>               
-            <a href="{{ route('admin.order.index') }}">ORDER</a>             
-            <a href="{{ route('admin.item.index') }}">ITEM</a>      
-            <a href="{{ route('admin.answer.index') }}">FAQ</a>
-            <a href="{{ route('admin.contact.index') }}">CONTACT</a>
+        <nav class="admin-nav">
+            <a href="{{ route('admin.home.index') }}">SEEK COFFEE </a>     
         </nav>
         <div class="logout-nav">
             @guest
