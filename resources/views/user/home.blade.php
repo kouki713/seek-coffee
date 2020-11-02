@@ -18,9 +18,11 @@
     <div class="item-contents clearfix">
         @foreach ($items as $item)
             <div class="content">
-                <div class="image">
-                    <img src="../../uploads/{{ $item->item_image }}">
-                </div>
+                <a href="{{ route('item.show', ['item' => $item]) }}">
+                    <div class="image">
+                        <img src="../../uploads/{{ $item->item_image }}">
+                    </div>
+                </a>
                 <div class="title">{{ $item->item_name }}</div>
                 <div class="price">¥{{ number_format($item->price) }}</div>
             </div>

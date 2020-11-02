@@ -126,12 +126,14 @@ footer .sub-footer .body {
     letter-spacing: 1px;
 }
 
+/* ヘッダーカート */
 .drawer-hidden {
     display: none;
   }
 .drawer-content {
     width: 30%;/* ここの割合を小さくすると閉じる部分の領域が広がる */
     height: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
     left: 100%;/* メニューを画面外へ */
@@ -166,11 +168,77 @@ footer .sub-footer .body {
     font-size: 20px;
 }
 .drawer-content .content .body {
-    margin-top: 40px;
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 90%;
     font-size: 14px;
 }
+.drawer-content .content .body .login {
+    
+
+}
+.drawer-content .content .body .cart-content {
+    display: flex;
+    padding: 20px;
+    border-bottom: solid 1px #EEEEEE;
+}
+.drawer-content .content .body .cart-content img {
+
+}
+.drawer-content .content .body .cart-content .carts {
+    text-align: left;
+    margin-left: 30px;
+    width: 70%;
+    
+}
+.drawer-content .content .body .cart-content input {
+    padding-top: 40px;
+}
+.drawer-content .content .body .total {
+    text-align: right;
+    padding: 20px 0;
+    border-bottom: solid 1px #EEEEEE;
+}
+.drawer-content .content .body .total p {
+    font-size: 20px;
+}
+.drawer-content .content .body .total p span {
+    margin-right: 50px;
+    font-size: 15px;
+}
+.drawer-content .content .body .btn {
+    padding: 20px 0;
+    display: flex;
+}
+
+.drawer-content .content .body .btn .cart-btn {
+    width: 49%;
+    height: 40px;
+    background-color: #34558b;
+    margin-right: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drawer-content .content .body .btn a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+.drawer-content .content .body .btn .order-btn {
+    width: 49%;
+    height: 40px;
+    background-color: #34558b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 .drawer-close {
     width: 100%;
     height: 100%;

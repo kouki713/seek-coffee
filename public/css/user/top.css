@@ -61,6 +61,9 @@
     height: 520px;
     object-fit: cover;
 }
+.top-items .item-contents .content .image img:hover {
+    opacity: .5;
+}
 .top-items .item-contents .content .title {
     margin-top: 16px;
     font-size: 18px;

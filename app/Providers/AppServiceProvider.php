@@ -2,7 +2,12 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\View;
+
 use Illuminate\Support\ServiceProvider;
+use App\Models\Cart;
+use App\Models\User;
+use App\Models\Item;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        
+        $user = \Auth::user();
     }
 }
