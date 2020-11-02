@@ -174,8 +174,18 @@ footer .sub-footer .body {
     font-size: 14px;
 }
 .drawer-content .content .body .login {
-    
-
+    height: 40px;
+    background-color: #34558b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.drawer-content .content .body .login a {
+    text-decoration: none;
+    color: #FFF;
+    width: 100%;
 }
 .drawer-content .content .body .cart-content {
     display: flex;

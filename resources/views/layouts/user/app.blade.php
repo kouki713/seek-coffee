@@ -57,47 +57,50 @@
                         </label>
                     </div>
                     <div class="body">
-                    @guest
-                    <a href="{{ route('user.login') }}" class="login">ログイン</a>
-                    @else
-                        @if(Auth::user()->carts->isEmpty())
-                            <p>カートは現在空です。</p>
+                        @guest
+                            <div class="login">
+                                <a href="{{ route('user.login') }}">ログイン</a>
+                            </div>
+                            
                         @else
-                            <?php $total_price = 0 ?>
-                            @foreach (Auth::user()->carts as $cart)
-                                <div class="cart-content">
-                                    <img src="../../uploads/{{ $cart->item->item_image }}" style="width:80px; height:50px;">
-                                    <div class="carts">
-                                        <p>{{ $cart->item->item_name }}</p>
-                                        <p>数量：{{ $cart->num }}</p>
-                                        <p>
-                                            <?php $total = $cart->item->price * $cart->num ?>
-                                            ¥{{ number_format($total) }}
-                                        </p>
+                            @if(Auth::user()->carts->isEmpty())
+                                <p>カートは現在空です。</p>
+                            @else
+                                <?php $total_price = 0 ?>
+                                @foreach (Auth::user()->carts as $cart)
+                                    <div class="cart-content">
+                                        <img src="../../uploads/{{ $cart->item->item_image }}" style="width:80px; height:50px;">
+                                        <div class="carts">
+                                            <p>{{ $cart->item->item_name }}</p>
+                                            <p>数量：{{ $cart->num }}</p>
+                                            <p>
+                                                <?php $total = $cart->item->price * $cart->num ?>
+                                                ¥{{ number_format($total) }}
+                                            </p>
+                                        </div>
+                                        <form method="POST" action="{{route('user.cart.destroy', ['cart' => $cart ]) }}">
+                                            @csrf
+                                            @method('delete')
+                                            <input type="submit" value="削除">
+                                        </form>
                                     </div>
-                                    <form method="POST" action="{{route('user.cart.destroy', ['cart' => $cart ]) }}">
-                                        @csrf
-                                        @method('delete')
-                                        <input type="submit" value="削除">
-                                    </form>
+                                    
+                                    <?php $total_price = $total_price + $total ?>
+                                @endforeach
+                                <div class="total">
+                                    <p><span>小計</span>
+                                    ¥{{ number_format($total_price) }}</p>
                                 </div>
-                                
-                                <?php $total_price = $total_price + $total ?>
-                            @endforeach
-                            <div class="total">
-                                <p><span>小計</span>
-                                ¥{{ number_format($total_price) }}</p>
-                            </div>
-                            <div class="btn">
-                                <div class="cart-btn">
-                                    <a href="{{ route('user.cart.index') }}" class="cart-btn">カートを見る</a>
+                                <div class="btn">
+                                    <div class="cart-btn">
+                                        <a href="{{ route('user.cart.index') }}" class="cart-btn">カートを見る</a>
+                                    </div>
+                                    <div class="order-btn">
+                                        <a href="{{ route('user.order.create') }}" class="order-btn">注文画面へ進む</a>
+                                    </div>
                                 </div>
-                                <div class="order-btn">
-                                    <a href="{{ route('user.order.create') }}" class="order-btn">注文画面へ進む</a>
-                                </div>
-                            </div>
-                        @endif 
-                    @endguest
+                            @endif 
+                        @endguest
                     </div>
                 </div>
             </nav>

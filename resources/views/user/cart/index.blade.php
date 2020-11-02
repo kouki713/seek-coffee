@@ -33,16 +33,7 @@
                     ¥{{ number_format($cart->item->price) }}
                 </td>
                 <td>
-                    <form>
-                        <select name="num">
-                            <option value="{{ $cart->num }}">{{ $cart->num }}</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </form>
+                    <p>{{ $cart->num }}</p>
                     <form method="POST" action="{{route('user.cart.destroy', ['cart' => $cart ]) }}">
                         @csrf
                         @method('delete')
@@ -65,6 +56,7 @@
         </h2>
         <p>送料800円込</p>
         <div class="btn">
+            <a href="{{ route('item.index') }}">買い物を続ける</a>
             <a href="{{ route('user.order.create') }}">注文画面へ進む</a>
         </div>
     </div>
