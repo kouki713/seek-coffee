@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="contact-header">
-    お問い合わせ一覧
+    商品一覧
 </div>
 <div class="item-index">
     <table>

@@ -23,9 +23,21 @@ class ReceiptController extends Controller
 
         $receipt->item_id = $request->item_id;
         $receipt->num = $request->num;
-
         $receipt->save();
 
+        $item = $receipt->item;
+
+        $item->num = $item->num + $receipt->num;
+
+        $item->save();
+
         return redirect()->route('admin.item.index');
+    }
+
+    public function show($item) 
+    {
+        $item = Item::find($item);
+
+        return view('admin.receipt.show', compact('item'));
     }
 }

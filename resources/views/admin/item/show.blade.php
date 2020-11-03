@@ -16,7 +16,9 @@
                 ¥{{ number_format($item->price) }}
                 <span>税込</span>
             </p>
-            <a href="#">送料について</a>
+            <p><span>在庫：</span>{{ $item->num }}
+                <a href="{{ route('admin.receipt.show', ['item' => $item]) }}">入庫情報入力へ</a>
+            </p>
         </div>
         <div class="button">
             <a href="{{ route('admin.item.edit', ['item' => $item]) }}" class="button">編集する</a>
@@ -45,4 +47,5 @@
         </div>
     </div>
 </div>
+
 @endsection

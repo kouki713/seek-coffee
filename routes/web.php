@@ -71,6 +71,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::post('item/status_update/{item}', 'ItemController@status_update')->name('item.status_update');
         Route::resource('order', 'OrderController')->only(['index', 'show', 'update']);
         Route::resource('receipt', 'ReceiptController')->only(['index', 'store']);
+        Route::get('receipt/{item}', 'ReceiptController@show')->name('receipt.show');
         Route::resource('contact', 'ContactController')->only(['index', 'show', 'update']);
         Route::resource('answer', 'AnswerController')->only(['index', 'store', 'edit', 'update', 'destroy']);
     });

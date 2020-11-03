@@ -22,6 +22,7 @@
     <link href="{{ asset('css/admin/top.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/contact.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/item.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/receipt.css') }}" rel="stylesheet">
 </head>
 <body>
     <header class="admin-header">
