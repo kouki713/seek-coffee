@@ -36,8 +36,8 @@
                     @else
                         @if ($item->item_status == 1)
                             <p>販売中</p>
-                        @elseif ($item->status == 2)
-                            <p>販売停止中</p>
+                        @elseif ($item->item_status == 2)
+                            <p style="color:tomato;">販売停止中</p>
                         @endif
                     @endif
                 </td>

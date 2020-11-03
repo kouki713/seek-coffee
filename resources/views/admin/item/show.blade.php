@@ -22,10 +22,15 @@
             <a href="{{ route('admin.item.edit', ['item' => $item]) }}" class="button">編集する</a>
         </div>
         <div class="button2">
+            
             @if ($item->item_status == 1)
-                <p>販売停止中</p>
+                <div class="status" style="background-color:tomato;">
+                    <p style="background-color:tomato;">販売停止中</p>
+                </div>
             @elseif ($item->item_status == 2)
-                <p>販売中</p>
+                <div class="status">
+                    <p>販売中</p>
+                </div>   
             @endif
             <form method="POST" action="{{route('admin.item.status_update', ['item' => $item ]) }}">
                 @csrf

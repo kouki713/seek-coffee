@@ -91,6 +91,34 @@
     background-color: #34558b;
     padding: 15px 0;
 }
+.item-show .item-content .button2 {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+}
+.item-show .item-content .button2 .status {
+    background-color: skyblue;
+    width: 49%;
+    padding: 10px 0;
+}
+.item-show .item-content .button2 p {
+    background-color: skyblue;
+    font-weight: 800;
+}
+.item-show .item-content .button2 form {
+    background-color: #34558b;
+    margin-left: 2%;
+    width: 49%;
+    padding: 10px 0;
+}
+.item-show .item-content .button2 form input {
+    border-radius: 0;
+    border: none;
+    background-color: #34558b;
+    color: #FFF;
+    cursor: pointer;
+}
 .item-show .item-content a {
     width: 100%;
     height: 100%;
