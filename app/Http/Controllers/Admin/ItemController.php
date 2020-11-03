@@ -63,6 +63,8 @@ class ItemController extends Controller
 
     public function update(Request $request, $item)
     {
+        $item = Item::find($item);
+
         $file = $request->item_image;
         $fileName = time() . $file->getClientOriginalName();
         $target_path = public_path('uploads/');
@@ -79,4 +81,21 @@ class ItemController extends Controller
 
         return redirect()->route('admin.item.index');
     }
+
+    public function status_update($item)
+    {
+        $item = Item::find($item);
+
+        if ($item->item_status == 1) {
+            $item->item_status = 2;
+            $item->save();
+        }
+        elseif ($item->item_status == 2) {
+            $item->item_status = 1;
+            $item->save();
+        }
+        
+        return back();
+    }
+
 }

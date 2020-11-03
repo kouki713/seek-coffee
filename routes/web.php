@@ -68,6 +68,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         
         Route::resource('home', 'HomeController')->only(['index']);
         Route::resource('item', 'ItemController');
+        Route::post('item/status_update/{item}', 'ItemController@status_update')->name('item.status_update');
         Route::resource('order', 'OrderController')->only(['index', 'show', 'update']);
         Route::resource('receipt', 'ReceiptController')->only(['index', 'store']);
         Route::resource('contact', 'ContactController')->only(['index', 'show', 'update']);

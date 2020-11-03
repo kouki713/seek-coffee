@@ -5,7 +5,7 @@
         <div class="image">
             <img src="../../uploads/{{ $item->item_image }}">
         </div>
-        
+
     </div>
     <div class="item-content">
         <div class="header">
@@ -20,6 +20,17 @@
         </div>
         <div class="button">
             <a href="{{ route('admin.item.edit', ['item' => $item]) }}" class="button">編集する</a>
+        </div>
+        <div class="button2">
+            @if ($item->item_status == 1)
+                <p>販売停止中</p>
+            @elseif ($item->item_status == 2)
+                <p>販売中</p>
+            @endif
+            <form method="POST" action="{{route('admin.item.status_update', ['item' => $item ]) }}">
+                @csrf
+                <input type="submit" value="ステータスを変更する">
+            </form>
         </div>
         <div class="show-body">
             <div class="text">
