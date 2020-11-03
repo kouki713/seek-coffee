@@ -1,0 +1,19 @@
+.order {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+.order .order-create {
+    width: 55%;
+    padding-left: 50px;
+}
+.order .order-create input { 
+    border: solid 1px #EEEEEE;
+}
+.order .order-cart {
+    width: 45%;
+    background-color: #EEEEEE;
+}
+.order .order-cart table {
+    width: 100%;
+}
