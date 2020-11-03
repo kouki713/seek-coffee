@@ -1,13 +1,60 @@
 .receipt-show {
-    margin-top: 50px;
-    padding: 30px 20px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 100px 20px;
     display: flex;
+    color: #4b4b4b;
 }
 .receipt-show .receipt-new {
-    width: 40%;
-    background-color: skyblue;
+    width: 30%;
+    background-color: #FFF;
+    margin-right: 10%;
+    border: solid 1px silver;
+}
+.receipt-show .header {
+    padding: 10px;
+    color: #FFF;
+    background-color: #34558b;
+    margin-bottom: 20px;
+}
+.receipt-show .header h2 {
+    font-size: 18px;
+    font-weight: 100;
+}
+.receipt-show .receipt-new p {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.receipt-show .receipt-new input {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: solid 1px silver;
+    border-radius: 0;
+    background-color: #E8F0FE;
+}
+
+.receipt-show .receipt-new .receipt-btn input {
+    border: none;
+    background-color: #34558b;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
 }
 .receipt-show .receipt-index {
     width: 60%;
-    background-color: tomato;
+    background-color: #FFF;
+    border: solid 1px silver;
+}
+.receipt-show .receipt-index table {
+    margin-left: 10px;
+    width: 90%;
+
+}
+.receipt-show .receipt-index table th {
+    text-align: left;
+    border-bottom: solid 1px #EEEEEE;
+}
+.receipt-show .receipt-index table tr {
+    margin-bottom: 10px;
 }
