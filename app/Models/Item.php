@@ -12,4 +12,7 @@ class Item extends Model
     public function receipts(){
         return $this->hasMany('App\Models\Receipt');
     }
+    public function order_details(){
+        return $this->hasMany('App\Models\OrderDetail');
+    }
 }
