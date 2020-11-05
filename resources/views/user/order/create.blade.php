@@ -42,9 +42,13 @@
                 <p>備考(なしの場合は『なし』と記載して下さい)</p>
                 <textarea type="text" name="memo" class="input" rows="4"></textarea>
             </div>
-            
-            <div class="confirm-btn">
-                <input type="submit" value="確認画面へ進む">
+            <div class="btn">
+                <div class="back-btn">
+                    <a href="{{ back() }}"><i class="fas fa-chevron-left"></i> 購入情報入力に戻る</a>
+                </div>
+                <div class="confirm-btn">
+                    <input type="submit" value="確認画面へ">
+                </div>
             </div>
         </form>
         

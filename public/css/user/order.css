@@ -26,7 +26,7 @@
     padding: 10px 0;
 }
 .order .order-create .input { 
-    width: 60%;
+    width: 80%;
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 3px;
@@ -34,10 +34,70 @@
     border: solid 1px #EEEEEE;
     background-color: #E8F0FE;
 }
-.order .order-create .confirm-btn {
+.order .order-create .btn {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.order .order-create .back-btn {
+    width: 50%;
+}
+.order .order-create .back-btn a {
+    text-decoration: none;
+    color: #34558b;
+}
+.order .order-create .confirm-btn {
+    width: 50%;
 }
 .order .order-create .confirm-btn input {
+    padding: 14px 24px;
+    background-color: #34558b;
+    color: #FFF;
+    border-radius: 0;
+    border: 0;
+}
+
+.order .order-confirm {
+    width: 55%;
+    padding-left: 50px;
+    font-size: 14px;
+}
+.order .order-confirm .confirm-name {
+    padding: 10px;
+    border-bottom: solid 1px #EEE;
+    width: 80%;
+}
+.order .order-confirm .confirm-pay {
+    padding: 10px;
+    border-bottom: solid 1px #EEE;
+    width: 80%;
+}
+.order .order-confirm .confirm-delivery {
+    padding: 10px;
+    border-bottom: solid 1px #EEE;
+    width: 80%;
+}
+.order .order-confirm .confirm-memo {
+    padding: 10px;
+    border-bottom: solid 1px #EEE;
+    width: 80%;
+}
+.order .order-confirm .btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.order .order-confirm .back-btn {
+    width: 50%;
+}
+.order .order-confirm .back-btn a {
+    text-decoration: none;
+    color: #34558b;
+}
+.order .order-confirm .confirm-btn {
+    width: 50%;
+}
+.order .order-confirm .confirm-btn input {
     padding: 14px 24px;
     background-color: #34558b;
     color: #FFF;
@@ -81,7 +141,7 @@
     font-weight: 600;
 }
 .order-status {
-    color: deepskyblue;
+    color: dodgerblue;
     font-weight: 400;
     font-size: 16px;
 }
