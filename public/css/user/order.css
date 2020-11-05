@@ -1,19 +1,87 @@
 .order {
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
     display: flex;
+    color: #4b4b4b;
 }
 .order .order-create {
     width: 55%;
     padding-left: 50px;
+    font-size: 14px;
 }
-.order .order-create input { 
+.order .order-create .order-title {
+    margin-bottom: 10px;
+}
+.order .order-create .deliverys {
+    padding: 10px 0;
+    width: 80%;
+    border-top: solid 1px #EEE;
+    border-bottom: solid 1px #EEE;
+}
+.order .order-create .new-delivery {
+    padding: 10px 0;
+    border-bottom: solid 1px #EEE;
+}
+.order .order-create .order-memo {
+    padding: 10px 0;
+}
+.order .order-create .input { 
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 0;
     border: solid 1px #EEEEEE;
+    background-color: #E8F0FE;
 }
+.order .order-create .confirm-btn {
+    margin-top: 20px;
+}
+.order .order-create .confirm-btn input {
+    padding: 14px 24px;
+    background-color: #34558b;
+    color: #FFF;
+    border-radius: 0;
+    border: 0;
+}
+
+
+
 .order .order-cart {
     width: 45%;
-    background-color: #EEEEEE;
+    
 }
 .order .order-cart table {
     width: 100%;
+    font-size: 14px;
+}
+.order .order-cart table .cart-image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.order .order-cart table .cart-image p {
+    margin-left: 20px;
+}
+.order .order-cart table .price td {
+    padding-top: 25px;
+    border-top: solid 1px #EEE;
+}
+.order .order-cart table .send td {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.order .order-cart table .total td {
+    padding-top: 25px;
+    border-top: solid 1px #EEE;
+}
+.order .order-cart table .total td p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.order-status {
+    color: deepskyblue;
+    font-weight: 400;
+    font-size: 16px;
 }

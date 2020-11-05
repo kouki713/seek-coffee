@@ -94,7 +94,12 @@ class OrderController extends Controller
             $order_detail->num = $cart->num;
             $order_detail->total_price = $cart->item->price * $cart->num;
             $order_detail->save();
-            
+
+            $item = Item::where('id', $cart->item->id)->first();
+            $item->num = $item->num - $order_detail->num;            
+
+            $item->save();
+
             $cart->delete();
         }
 
