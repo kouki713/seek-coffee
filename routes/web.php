@@ -39,7 +39,7 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
         // TOPページ
         Route::resource('home', 'HomeController', ['only' => 'index']);
         
-        Route::resource('order', 'OrderController')->only(['create', 'store']);
+        Route::resource('order', 'OrderController')->only(['create', 'store', 'show']);
         Route::post('order/confirm', 'OrderController@confirm')->name('order.confirm');
         Route::get('order/finish', 'OrderController@finish')->name('order.finish');
         Route::get('order/about', 'OrderController@about')->name('order.about');

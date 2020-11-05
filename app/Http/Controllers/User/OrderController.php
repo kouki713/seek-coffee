@@ -116,4 +116,14 @@ class OrderController extends Controller
     {
         return view('user.order.about');
     }
+
+    public function show($order)
+    {
+        $order = Order::find($order);
+
+                
+        return view('user.order.show', compact('order'));
+    }
+
+
 }

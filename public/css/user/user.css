@@ -32,7 +32,7 @@
     color: #34558b;
     font-size: 13px;
 }
-.user-index .order {
+.user-index .user-order {
     width: 68%;
     margin-left: 2%;
 }
@@ -40,10 +40,24 @@
     font-size: 24px;
     border-bottom: solid 1px #EEEEEE;
 }
-.user-index .order .body {
+.user-index .user-order .body {
     margin-top: 30px;
     text-align: center;
+    width: 100%;
 }
-.user-index .order .body p {
+.user-index .user-order .body p {
     
+}
+.user-index .user-order .body table {
+    width: 100%;
+    text-align: left;
+}
+.user-index .user-order .body table td {
+    padding: 10px 0;
+    border-bottom: solid 1px #EEE;
+    font-size: 14px;
+}
+.user-index .user-order .body table td a {
+    text-decoration: none;
+    color: #34558b;
 }
