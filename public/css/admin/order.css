@@ -1,7 +1,20 @@
 .order-index {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #FFF;
+    color: #4b4b4b;
+    padding-top: 20px;
+}
+.order-index .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    border-left: solid 7px #34558b;
+    padding-left: 10px;
+}
+.order-index a {
+    color: #34558b;
+    text-decoration: none;
 }
 .order-index .order1 {
     width: 90%;
@@ -22,4 +35,28 @@
 .order-index table {
     width: 100%;
     text-align: left;
+}
+.order-index table td {
+    padding: 8px 0;
+    border-top: solid 1px #ddd;
+    font-size: 14px;
+}
+
+.order-index table .day {
+    width: 15%;
+}
+.order-index table .buy {
+    width: 15%;
+}
+.order-index table .item {
+    width: 25%;
+}
+.order-index table .price {
+    width: 15%;
+}
+.order-index table .status {
+    width: 15%;
+}
+.order-index table .show {
+    width: 15%;
 }

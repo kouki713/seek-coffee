@@ -3,15 +3,15 @@
 
 <div class="order-index">
     <div class="order1">
-       <p>新規注文</p>
+       <p class="title">新規注文</p>
         <table>
             <tr>
-                <th>日時</th>
-                <th>購入者</th>
-                <th>商品</th>
-                <th>金額</th>
-                <th>ステータス</th>
-                <th></th>
+                <th class="day">日時</th>
+                <th class="buy">購入者</th>
+                <th class="item">商品</th>
+                <th class="price">金額</th>
+                <th class="status">ステータス</th>
+                <th class="show"></th>
             </tr>
             @foreach ($orders1 as $order)
                 <tr>
@@ -41,15 +41,18 @@
                     </td>
                 </tr>
             @endforeach
-        
-            <p>受付前</p>
+        </table> 
+    </div>
+    <div class="order2">
+        <p class="title">受付前</p>
+        <table>
             <tr>
-                <th>日時</th>
-                <th>購入者</th>
-                <th>商品</th>
-                <th>金額</th>
-                <th>ステータス</th>
-                <th></th>
+                <th class="day">日時</th>
+                <th class="buy">購入者</th>
+                <th class="item">商品</th>
+                <th class="price">金額</th>
+                <th class="status">ステータス</th>
+                <th class="show"></th>
             </tr>
             @foreach ($orders2 as $order)
                 <tr>
@@ -79,15 +82,18 @@
                     </td>
                 </tr>
             @endforeach
-        
-            <p>発送手配中</p>
+        </table> 
+    </div>
+    <div class="order3">
+        <p class="title">発送手配中</p>
+        <table>
             <tr>
-                <th>日時</th>
-                <th>購入者</th>
-                <th>商品</th>
-                <th>金額</th>
-                <th>ステータス</th>
-                <th></th>
+                <th class="day">日時</th>
+                <th class="buy">購入者</th>
+                <th class="item">商品</th>
+                <th class="price">金額</th>
+                <th class="status">ステータス</th>
+                <th class="show"></th>
             </tr>
             @foreach ($orders3 as $order)
                 <tr>
@@ -117,15 +123,18 @@
                     </td>
                 </tr>
             @endforeach
-        
-            <p>発送済み</p>
+        </table> 
+    </div>
+    <div class="order4">
+        <p class="title">発送済み</p>
+        <table>
             <tr>
-                <th>日時</th>
-                <th>購入者</th>
-                <th>商品</th>
-                <th>金額</th>
-                <th>ステータス</th>
-                <th></th>
+                <th class="day">日時</th>
+                <th class="buy">購入者</th>
+                <th class="item">商品</th>
+                <th class="price">金額</th>
+                <th class="status">ステータス</th>
+                <th class="show"></th>
             </tr>
             @foreach ($orders4 as $order)
                 <tr>
