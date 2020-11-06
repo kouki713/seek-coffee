@@ -1,0 +1,25 @@
+.order-index {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+.order-index .order1 {
+    width: 90%;
+    margin: 20px auto;
+}
+.order-index .order2 {
+    width: 90%;
+    margin: 30px auto;
+}
+.order-index .order3 {
+    width: 90%;
+    margin: 30px auto;
+}
+.order-index .order4 {
+    width: 90%;
+    margin: 30px auto;
+}
+.order-index table {
+    width: 100%;
+    text-align: left;
+}
