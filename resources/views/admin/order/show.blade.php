@@ -10,7 +10,7 @@
             @csrf
             @method('put')
                 @if($order->order_status == 1)
-                    <h4>ステータス：受付前</h4>
+                    <h4>ステータス：<span>受付前</span></h4>
                     <h5>({{ $order->created_at->format('Y年m月d日H時i分') }}更新)</h5>
                 @elseif($order->order_status == 2)
                     <h4>ステータス：受付済み</h4>
