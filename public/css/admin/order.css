@@ -4,6 +4,7 @@
     background-color: #FFF;
     color: #4b4b4b;
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 .order-index .title {
     margin-top: 30px;
@@ -59,4 +60,91 @@
 }
 .order-index table .show {
     width: 15%;
+}
+
+.order-show {
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 30px;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+.order-show .header {
+    font-size: 18px;
+    border-left: solid 7px #34558b;
+    padding-left: 10px;
+}
+.order-show .order {
+    width: 35%;
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-left: 5%;
+}
+.order-show .order .day {
+    margin-bottom: 20px;
+}
+.order-show .order p {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #EEE;
+    width: 80%;
+}
+.order-show .order .status {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #EEE;
+    padding-bottom: 5px;
+    width: 80%;
+}
+.order-show .order .status h4 {
+    padding-bottom: 5px;
+}
+.order-show .order select {
+    padding: 5px 5px;
+}
+.order-show .order input {
+    margin-left: 20px;
+    background-color: #34558b;
+    border: none;
+    border-radius: 0;
+    color: #FFF;
+    padding: 5px 10px;
+}
+.order-show .order-item {
+    width: 55%;
+    padding-left: 10px;
+    padding-top: 60px;
+}
+.order-show .order-item table {
+    width: 100%;
+    padding-top: 50px;
+}
+.order-show .order-item table .item-image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: ;
+}
+.order-show .order-item table .item-image p {
+    margin-left: 20px;
+}
+.order-show .order-item table td {
+    padding-bottom: 10px;
+}
+.order-show .order-item table .price td {
+    padding: 20px 0;
+    border-top: solid 1px #EEE;
+}
+.order-show .order-item table .send td {
+    padding: 20px 0;
+    border-top: solid 1px #EEE;
+}
+.order-show .order-item table .total td {
+    padding: 20px 0;
+    border-top: solid 1px #EEE;
+}
+.order-show .order-item table .total td p {
+    font-size: 18px;
+    font-weight: 800;
 }

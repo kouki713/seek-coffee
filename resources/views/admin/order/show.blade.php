@@ -2,33 +2,38 @@
 @section('content')
 
 <div class="order-show">
-    <div class="order"> 
-        <div class="name">
-            <p>注文日時：{{ $order->created_at->format('Y年m月d日') }}</p>
-        </div>
-
-        <form method="POST" action="{{route('admin.order.update', ['order'=>$order])}}">
+    <div class="order">
+        <h2 class="header">注文詳細</h2>
+        
+        <div class="status">
+            <form method="POST" action="{{route('admin.order.update', ['order'=>$order])}}">
             @csrf
             @method('put')
-            <select name="order_status">
-
-                    <option value="{{ $order->order_status }}">
-                        @if($order->order_status == 1)
-                            受付前
-                        @elseif($order->order_status == 2)
-                            受付済み
-                        @elseif($order->order_status == 3)
-                            発送手配待
-                        @elseif($order->order_status == 4)
-                            発送手配済
-                        @endif
-                    </option>
+                <h4>
+                    ステータス：
+                    @if($order->order_status == 1)
+                        受付前
+                    @elseif($order->order_status == 2)
+                        受付済み
+                    @elseif($order->order_status == 3)
+                        発送手配待ち
+                    @elseif($order->order_status == 4)
+                        発送手配済
+                    @endif
+                </h4>
+                <select name="order_status">
+                    <option value="{{ $order->order_status }}">選択して下さい</option>
+                    <option value="1">受付前</option>
                     <option value="2">受付済</option>
-                    <option value="3">発送手配中</option>
+                    <option value="3">発送手配待ち</option>
                     <option value="4">発送手配済</option>
                 </select>
-                <input type="submit" value="ステータスを更新する">
-        </form>        
+            <input type="submit" value="更新する">
+            </form>
+        </div>
+        <div class="day">
+            <p>注文日時：{{ $order->created_at->format('Y年m月d日') }}</p>
+        </div>       
         <div class="name">
             <p>連絡先：{{ Auth::user()->email }}</p>
         </div>
@@ -52,17 +57,18 @@
             <input type="hidden" name="memo" value="{{ $order->memo }}" class="input">
         </div>    
     </div>
-    <div class="order-cart">
+    <div class="order-item">
         <table>
             <?php $total_price = 0 ?>
             @foreach ($order->order_details as $detail)
                 <tr>
-                    <td class="cart-image">
+                    <td class="item-image">
                         <a href="{{ route('item.show', ['item'=>$detail->item]) }}">
                             <img src="../../uploads/{{ $detail->item->item_image }}" style="width:100px; height:60px;">
                         </a>
                         <p class="title">{{ $detail->item->item_name }}</p>
                     </td>
+                    <td>数量：{{ $detail->num }}</td>
                     <td class="cart-image-price">
                         <p>¥{{ number_format($detail->total_price) }}</p>
                     </td>
@@ -71,14 +77,17 @@
             @endforeach
             <tr class="price">
                 <td>小計</td>
+                <td></td>
                 <td>¥{{ number_format($total_price) }}</td>
             </tr>
             <tr class="send">
                 <td>送料</td>
+                <td></td>
                 <td>¥800</td>
             </tr>
             <tr class="total">
                 <td>合計</td>
+                <td></td>
                 <td>
                     <p>¥{{ number_format($total_price + 800) }}</p>
                 </td>

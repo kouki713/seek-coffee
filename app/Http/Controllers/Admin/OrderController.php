@@ -33,6 +33,6 @@ class OrderController extends Controller
         $order->order_status = $request->order_status;
         $order->save();
 
-        return redirect()->route('admin.order.index');
+        return back();
     }
 }
