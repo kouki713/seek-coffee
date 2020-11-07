@@ -5,13 +5,15 @@
     color: #4b4b4b;
     padding-top: 20px;
     padding-bottom: 50px;
+    font-size: 14px;
 }
 .order-index .title {
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: 800;
     border-left: solid 7px #34558b;
     padding-left: 10px;
+    font-size: 18px;
 }
 .order-index a {
     color: #34558b;
@@ -44,13 +46,13 @@
 }
 
 .order-index table .day {
-    width: 15%;
+    width: 20%;
 }
 .order-index table .buy {
     width: 15%;
 }
 .order-index table .item {
-    width: 25%;
+    width: 20%;
 }
 .order-index table .price {
     width: 15%;
