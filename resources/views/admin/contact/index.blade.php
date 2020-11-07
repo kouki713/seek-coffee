@@ -1,12 +1,13 @@
 @extends('layouts.admin.app')
 @section('content')
 
-<div class="contact-header">
-    お問い合わせ一覧
+
+<div class="contact">
+
 </div>
 <div class="contact-main">
     <div class="contact-content">
-        <p>未回答　<span>{{$contacts->count()}}</span></p>
+        <p>未回答　（<span>{{$contacts->count()}}</span>件）</p>
         <table>
             <tr>
                 <th>お問い合わせ日時</th>

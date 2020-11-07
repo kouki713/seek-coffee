@@ -1,11 +1,9 @@
 @extends('layouts.admin.app')
 @section('content')
-<div class="contact-header">
-    お問い合わせ詳細
-</div>
 <div class="contact-show">
     <div class="inner">
         <div class="inner-content">
+            <h2>お問い合わせ詳細</h2>
             <p>お問い合わせ日時：{{ $contact->created_at }}</p>
             @if ( $contact->contact_status == 1 )
                 <p>回答日時：<span style="color:red;">未回答</span></p>
@@ -19,7 +17,7 @@
                 </a>
             </p>
         </div>
-        <div class="inner-content">
+        <div class="inner-content2">
             <p>件名：{{ $contact->title }}</p>
             <p>内容</p>
             <p>{{ $contact->body }}</p>
