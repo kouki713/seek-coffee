@@ -7,7 +7,9 @@
 <div class="home-main">
     <div class="body1">
         <div class="order">
-            <div class="header">注文状況</div>
+            <div class="header">
+                <p>注文状況</p>
+            </div>
             <div class="body">
                 <div class="title">本日の注文</div>
                 <div class="num">2</div>
@@ -38,7 +40,9 @@
             </div>
         </div>
         <div class="contact">
-            <div class="header">お問い合わせ状況</div>
+            <div class="header">
+                <p>お問い合わせ状況</p>
+            </div>
             <div class="body">
                 <div class="title">本日のお問い合わせ</div>
                 <div class="num">2</div>
@@ -57,7 +61,9 @@
     </div>
     <div class="body2">
         <div class="sales">
-            <div class="header">売り上げ状況</div>
+            <div class="header">
+                <p>売り上げ状況</p>
+            </div>
             <div class="body">
                 <div class="main">
                     <div class="num">
@@ -79,10 +85,12 @@
                         <p>今日の売り上げ / 売り上げ件数</p>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
-        <div class="receipt">
-            <div class="header">ショップ状況</div>
+        <div class="home-receipt">
+            <div class="header">
+                <p>ショップ状況</p>
+            </div>
             <div class="body">
                 <div class="body-content">
                     <i class="fas fa-tags">
