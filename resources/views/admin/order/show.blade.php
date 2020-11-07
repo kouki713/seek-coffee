@@ -9,18 +9,19 @@
             <form method="POST" action="{{route('admin.order.update', ['order'=>$order])}}">
             @csrf
             @method('put')
-                <h4>
-                    ステータス：
-                    @if($order->order_status == 1)
-                        受付前
-                    @elseif($order->order_status == 2)
-                        受付済み
-                    @elseif($order->order_status == 3)
-                        発送手配待ち
-                    @elseif($order->order_status == 4)
-                        発送手配済
-                    @endif
-                </h4>
+                @if($order->order_status == 1)
+                    <h4>ステータス：受付前</h4>
+                    <h5>({{ $order->created_at->format('Y年m月d日H時i分') }}更新)</h5>
+                @elseif($order->order_status == 2)
+                    <h4>ステータス：受付済み</h4>
+                    <h5>（{{ $order->updated_at->format('Y年m月d日H時i分') }}更新）</h5>
+                @elseif($order->order_status == 3)
+                    <h4>ステータス：発送手配待ち</h4>
+                    <h5>（{{ $order->updated_at->format('Y年m月d日H時i分') }}更新）</h5>
+                @elseif($order->order_status == 4)
+                    <h4>ステータス：発送手配済</h4>
+                    <h5>（{{ $order->updated_at->format('Y年m月d日H時i分') }}更新）</h5>
+                @endif
                 <select name="order_status">
                     <option value="{{ $order->order_status }}">選択して下さい</option>
                     <option value="1">受付前</option>
@@ -32,7 +33,7 @@
             </form>
         </div>
         <div class="day">
-            <p>注文日時：{{ $order->created_at->format('Y年m月d日') }}</p>
+            <p>注文日時：{{ $order->created_at->format('Y年m月d日H時i分') }}</p>
         </div>       
         <div class="name">
             <p>連絡先：{{ Auth::user()->email }}</p>

@@ -6,7 +6,7 @@
        <p class="title">新規注文</p>
         <table>
             <tr>
-                <th class="day">日時</th>
+                <th class="day">注文日時</th>
                 <th class="buy">購入者</th>
                 <th class="item">商品</th>
                 <th class="price">金額</th>
@@ -47,7 +47,7 @@
         <p class="title">受付前</p>
         <table>
             <tr>
-                <th class="day">日時</th>
+                <th class="day">注文日時</th>
                 <th class="buy">購入者</th>
                 <th class="item">商品</th>
                 <th class="price">金額</th>
@@ -88,7 +88,7 @@
         <p class="title">発送手配中</p>
         <table>
             <tr>
-                <th class="day">日時</th>
+                <th class="day">注文日時</th>
                 <th class="buy">購入者</th>
                 <th class="item">商品</th>
                 <th class="price">金額</th>
@@ -129,7 +129,7 @@
         <p class="title">発送済み</p>
         <table>
             <tr>
-                <th class="day">日時</th>
+                <th class="day">注文日時</th>
                 <th class="buy">購入者</th>
                 <th class="item">商品</th>
                 <th class="price">金額</th>
