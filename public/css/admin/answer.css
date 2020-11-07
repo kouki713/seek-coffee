@@ -1,0 +1,72 @@
+.answer {
+    color: #4b4b4b;
+    width: 100%;
+    font-weight: 100;
+    padding-top: 20px;
+    background-color: #FFF;
+    padding-bottom: 150px;
+}
+.answer .answer-content {
+    border-bottom: solid 1px #EEEEEE;
+    padding: 30px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+.answer .answer-content .title {
+    display: flex;
+}
+.answer .answer-content .title h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.answer .answer-content .title a{
+    width: 10%;
+    text-decoration: none;
+    margin-top: 5px;
+    color: #4b4b4b;
+}
+.answer .answer-content .body  {
+    margin: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.answer .answercontent .body p  {
+    font-size: 15px;
+}
+.answer .answer-header {
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    border-left: solid 7px #34588b;
+    padding-left: 10px;
+}
+.answer .answer-content .answer-btn {
+    margin-left: 90%;
+    margin-top: 10px;
+}
+.answer .answer-content .answer-btn a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #34588b;
+}
+.answer .answer-content p {
+    margin-bottom: 10px;
+}
+.answer .answer-content .form-control {
+    width: 100%;
+    border: solid 1px #EEE;
+    background-color: #E8F0FE;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.answer .answer-content .answer-new-btn input {
+    padding: 8px 15px;
+    background-color: #34588b;
+    color: #FFF;
+    border-radius: 0;
+    border: 0;
+    width: 70px;
+}

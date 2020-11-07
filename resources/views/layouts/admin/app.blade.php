@@ -24,6 +24,7 @@
     <link href="{{ asset('css/admin/item.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/receipt.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/order.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/answer.css') }}" rel="stylesheet">
 </head>
 <body>
     <header class="admin-header">
