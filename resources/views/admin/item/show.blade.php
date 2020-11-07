@@ -1,7 +1,9 @@
 @extends('layouts.admin.app')
 @section('content')
 <div class="item-show">
+    
     <div class="item-image">
+        <h2>商品詳細</h2>
         <div class="image">
             <img src="../../uploads/{{ $item->item_image }}">
         </div>

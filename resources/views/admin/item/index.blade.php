@@ -1,10 +1,9 @@
 @extends('layouts.admin.app')
 @section('content')
 
-<div class="contact-header">
-    商品一覧
-</div>
+
 <div class="item-index">
+    <h2>商品一覧</h2>
     <table>
         <tr>
             <th>
