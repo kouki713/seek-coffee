@@ -44,18 +44,14 @@ class CartController extends Controller
         return redirect()->route('user.cart.index');
     }
 
-    public function update()
-    {
-        // $user = \Auth::user();
+    public function update(Request $request, $cart)
+    {   
+        $cart = Cart::find($cart);
 
-        // $values = Cart::where('user_id', $user->id)->get();
-
-        // foreach ($values as $value) {
-        //     $value->num = $repuest->input('num'.$value->item_id)
-        // };
-        // $delivery->address_name = $request->input('address_name'.$value->item_id);
-        // $delivery->postal_code = $request->input('postal_code');
-        // $delivery->address = $request->input('address');
+        $cart->num = $request->num;
+        $cart->save();
+        
+        return back();
     }
 
     public function destroy($cart)

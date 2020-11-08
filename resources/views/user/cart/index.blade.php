@@ -5,6 +5,7 @@
     <h1 class="title">CARTS</h1>
 </div>
 <div class="cart">
+
     <table>
         <tr>
             <th>
@@ -19,6 +20,7 @@
             <th>
                 <p>合計</p>
             </th>
+            <th></th>
         </tr>
         <?php $total = 0 ?>
         @foreach ($carts as $cart)
@@ -33,17 +35,32 @@
                     ¥{{ number_format($cart->item->price) }}
                 </td>
                 <td>
-                    <p>{{ $cart->num }}</p>
-                    <form method="POST" action="{{route('user.cart.destroy', ['cart' => $cart ]) }}">
+                    <form method="POST" action="{{route('user.cart.update', ['cart' => $cart])}}">
                         @csrf
-                        @method('delete')
-                        <input type="submit" value="削除">
+                        @method('put')
+                        <select name="num">
+                            <option value="{{ $cart->num }}">{{ $cart->num }}</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <input type="submit" value="再計算" class="cart-update">
                     </form>
+                    
                 </td>   
                 <td>
                     <?php $total_price = $cart->item->price * $cart->num ?>
                     ¥{{ number_format($total_price) }}
                     <?php $total = $total + $total_price ?>
+                </td>
+                <td>
+                    <form method="POST" action="{{route('user.cart.destroy', ['cart' => $cart ]) }}">
+                        @csrf
+                        @method('delete')
+                        <input type="submit" value="削除">
+                    </form>
                 </td>
             </tr>
         @endforeach

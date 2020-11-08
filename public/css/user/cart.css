@@ -40,6 +40,10 @@
     border-radius: 0;
     border: solid 1px #EEEEEE;
 }
+.cart td .cart-update {
+    font-size: 12px;
+    margin-left: 10px;
+}
 .cart .body {
     width: 100%;
     text-align: right;
