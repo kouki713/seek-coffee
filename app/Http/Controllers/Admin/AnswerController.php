@@ -15,9 +15,16 @@ class AnswerController extends Controller
         return view('admin.answer.index', compact('answers'));
     }
 
-    public function store()
+    public function store(Request $request)
     {
+        $answer = new Answer;
         
+        $answer->title = $request->title;
+        $answer->body = $request->body;
+
+        $answer->save();
+
+        return back();
     }
 
     public function edit($answer)
@@ -29,11 +36,21 @@ class AnswerController extends Controller
 
     public function update(Request $request, $answer)
     {
-       
+       $answer = Answer::find($answer);
+
+       $answer->title = $request->title;
+       $answer->body = $request->body;
+
+       $answer->save();
+       return redirect()->route('admin.answer.index');
     }
 
-    public function destroy()
+    public function destroy($answer)
     {
-       
+        $answer = Answer::find($answer);
+
+        $answer->delete();
+
+        return redirect()->route('admin.answer.index');
     }
 }

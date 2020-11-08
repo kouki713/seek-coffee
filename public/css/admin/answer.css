@@ -1,6 +1,7 @@
 .answer {
     color: #4b4b4b;
     width: 100%;
+    height: 100vh;
     font-weight: 100;
     padding-top: 20px;
     background-color: #FFF;
@@ -69,4 +70,19 @@
     border-radius: 0;
     border: 0;
     width: 70px;
+}
+.answer .answer-content .answer-update-btn input {
+    border-radius: 0;
+    border: 0;
+    background-color: #34588b;
+    color: #FFF;
+    padding: 8px 20px;
+    width: 70px;
+}
+.answer .answer-content .answer-delete-btn input {
+    border-radius: 0;
+    border: 0;
+    background-color: #FFF;
+    color: #34588b;
+    margin-top: 10px;
 }
