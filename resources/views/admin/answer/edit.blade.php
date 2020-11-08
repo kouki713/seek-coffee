@@ -21,7 +21,7 @@ FAQ 編集
             <form method="POST" action="{{route('admin.answer.destroy', ['answer' => $answer ]) }}">
                 @csrf
                 @method('delete')
-                <input type="submit" value="削除する">
+                <input type="submit" value="削除する" onClick="delete_alert(event);return false;">
             </form>
         </div>
     </div>
