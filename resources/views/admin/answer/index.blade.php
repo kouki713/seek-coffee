@@ -9,14 +9,19 @@
         <div class="answer-content">
             <div class="title">
                 <h2>{{ $answer->title }}</h2>
-                <a href="#">⬇︎</a>
+                <i class="fas fa-minus close-btn"></i>
+                <i class="fas fa-angle-down open-btn"></i>
+
             </div>
-            <div class="body">
-                <p>{!! nl2br(e($answer->body)) !!}</p>
+            <div class="answer-modal">
+                <div class="body">
+                    <p>{!! nl2br(e($answer->body)) !!}</p>
+                </div>
+                <div class="answer-btn">
+                    <a href="{{ route('admin.answer.edit', ['answer'=>$answer]) }}">編集する</a>
+                </div>
             </div>
-            <div class="answer-btn">
-                <a href="{{ route('admin.answer.edit', ['answer'=>$answer]) }}">編集する</a>
-            </div>
+            
         </div>
     @endforeach
     <div class="answer-header">

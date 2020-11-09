@@ -21,16 +21,25 @@
     margin: 0 auto;
     font-size: 18px;
 }
-.answer .answer-content .title a{
+.answer .answer-content .title i{
     width: 10%;
     text-decoration: none;
     margin-top: 5px;
     color: #4b4b4b;
 }
+.answer .answer-content .title .open-btn {
+    display: block;
+}
+.answer .answer-content .title .close-btn {
+    display: none;
+}
+.answer .answer-content .answer-modal {
+    display: none;
+    margin-top: 20px;
+}
 .answer .answer-content .body  {
     margin: 20px 0;
     width: 90%;
-    margin: 0 auto;
 }
 .answer .answercontent .body p  {
     font-size: 15px;
