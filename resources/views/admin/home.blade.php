@@ -19,21 +19,21 @@
             </div>
             <div class="body">
                 <div class="title">受付前</div>
-                <div class="num">3</div>
+                <div class="num">{{ $orders1->count() }}</div>
                 <a href="#">
                     <span>></span>
                 </a>
             </div>
             <div class="body">
                 <div class="title">受付済み</div>
-                <div class="num">2</div>
+                <div class="num">{{ $orders2->count() }}</div>
                 <a href="#">
                     <span>></span>
                 </a>
             </div>
             <div class="body">
                 <div class="title">発送手配待ち</div>
-                <div class="num">1</div>
+                <div class="num">{{ $orders3->count() }}</div>
                 <a href="#">
                     <span>></span>
                 </a>
@@ -44,15 +44,15 @@
                 <p>お問い合わせ状況</p>
             </div>
             <div class="body">
-                <div class="title">本日のお問い合わせ</div>
-                <div class="num">2</div>
+                <div class="title">未回答</div>
+                <div class="num">{{ $contacts->count() }}</div>
                 <a href="#">
                     <span>></span>
                 </a>
             </div>
             <div class="body">
-                <div class="title">未回答</div>
-                <div class="num">2</div>
+                <div class="title">回答済み</div>
+                <div class="num">{{ $contacts2->count() }}</div>
                 <a href="#">
                     <span>></span>
                 </a>
@@ -107,7 +107,7 @@
                 <div class="body-content">
                     <i class="fas fa-users"></i>
                     <div class="main">
-                        <div class="num">25</div>    
+                        <div class="num">{{ $users->count() }}</div>    
                         <div class="title">会員数</div>
                     </div>
                     <a href="#">
