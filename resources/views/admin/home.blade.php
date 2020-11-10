@@ -12,7 +12,7 @@
             </div>
             <div class="body">
                 <div class="title">本日の注文</div>
-                <div class="num">2</div>
+                <div class="num">{{ $orders4->count() }}</div>
                 <a href="#">
                     <span>></span>
                 </a>
@@ -67,20 +67,20 @@
             <div class="body">
                 <div class="main">
                     <div class="num">
-                        <p>¥ 89,000<span>/</span>2<span>件</span></p>
+                        <p>¥{{ number_format($month_price) }}<span>/</span>{{ $orders->count() }}<span>件</span></p>
                     </div>
                     <p>今月の売り上げ / 売り上げ件数</p>
                 </div>
                 <div class="sub">
                     <div class="contents">
                         <div class="num">
-                            <p>¥ 24,000<span>/</span>5<span>件</span></p>
+                            <p>¥{{ number_format($yesterday_price) }}<span>/</span>{{ $orders5->count() }}<span>件</span></p>
                         </div>
                         <p>昨日の売り上げ / 売り上げ件数</p>
                     </div>
                     <div class="contents">
                         <div class="num">
-                            <p>¥ 19,000<span>/</span>4<span>件</span></p>
+                            <p>¥{{ number_format($today_price) }}<span>/</span>{{ $orders4->count() }}<span>件</span></p>
                         </div>
                         <p>今日の売り上げ / 売り上げ件数</p>
                     </div>
@@ -97,7 +97,7 @@
                         <i class="fas fa-slash"></i>
                     </i>
                     <div class="main">
-                        <div class="num">1</div>    
+                        <div class="num">{{ $items->count() }}</div>    
                         <div class="title">在庫切れ商品</div>
                     </div>
                     <a href="#">
